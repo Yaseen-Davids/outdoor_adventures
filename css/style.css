@@ -8,7 +8,7 @@ body {
 
 .home-img {
   grid-area: home-img;
-  height: 750px;
+  height: 900px;
   background: url("../images/home.jpg");
   background-size: cover;
   background-position: center;
@@ -39,14 +39,12 @@ body {
 
 nav {
   grid-area: navbar;
-  border: 1px solid black;
   position: fixed;
   width: 100%;
   background-color: white;
   opacity: 0.92;
   z-index: 100; }
   nav #nav_links {
-    border: 1px solid black;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     padding: 15px; }
@@ -74,41 +72,93 @@ nav {
   border: 1px solid black; }
 
 .category_section {
+  line-height: 50px;
   grid-area: category_section;
   border: 1px solid black;
   height: 400px;
   padding: 10px; }
   .category_section h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
-    border: 1px solid black; }
+    font-size: 1.75em; }
   .category_section .hiking_box {
-    border: 1px solid black;
-    height: 240px;
-    width: 24%;
+    height: 200px;
+    width: 20%;
+    max-width: 20%;
     float: left;
-    border-radius: 50%; }
+    background: url("../images/hike.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .category_section .fishing_box {
-    border: 1px solid black;
-    height: 240px;
-    width: 24%;
+    height: 200px;
+    width: 20%;
+    max-width: 20%;
     float: left;
-    border-radius: 50%;
-    margin-left: 10px; }
+    background: url("../images/fish.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 69px; }
   .category_section .climbing_box {
-    border: 1px solid black;
-    height: 240px;
-    width: 24%;
+    height: 200px;
+    width: 20%;
+    max-width: 20%;
     float: left;
-    border-radius: 50%;
-    margin-left: 10px; }
+    background: url("../images/rock.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 69px; }
   .category_section .camping_box {
-    border: 1px solid black;
-    height: 240px;
-    width: 24%;
+    height: 200px;
+    width: 20%;
+    max-width: 20%;
     float: left;
-    border-radius: 50%;
-    margin-left: 10px; }
+    background: url("../images/tent.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 69px; }
+  .category_section .hiking_text {
+    height: 50px;
+    width: 20%;
+    max-width: 20%;
+    float: left; }
+    .category_section .hiking_text h3 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25em; }
+  .category_section .fishing_text {
+    height: 50px;
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    margin-left: 69px; }
+    .category_section .fishing_text h3 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25em; }
+  .category_section .climbing_text {
+    height: 50px;
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    margin-left: 69px; }
+    .category_section .climbing_text h3 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25em; }
+  .category_section .camping_text {
+    height: 50px;
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    margin-left: 69px; }
+    .category_section .camping_text h3 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25em; }
 
 .ads_bar {
   grid-area: ads_bar;

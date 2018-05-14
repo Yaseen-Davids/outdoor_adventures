@@ -4,12 +4,33 @@
 $navbarTextColor: rgb(53, 235, 17);
 $navbarHoverColor : black;
 $borderSettings: 1px solid black;
+$categoryImgSpace: 69px;
 
 // This is the mixins
 @mixin backgroundImgSettings{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+@mixin categoryImg{
+    height: 200px;
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    // border-radius: 50%;
+}
+@mixin categoryText{
+    height: 50px;
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    // border-radius: 50%;
+
+    h3{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25em;
+    }
 }
 
 .grid-container{
@@ -27,7 +48,7 @@ body{
 
 .home-img{
     grid-area: home-img;
-    height: 750px;
+    height: 900px;
     background: url('../images/home.jpg');
     @include backgroundImgSettings;
     margin-top: -5px;
@@ -66,7 +87,6 @@ body{
 
 nav{
     grid-area: navbar;
-    border: $borderSettings;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -75,11 +95,9 @@ nav{
 
 
     #nav_links{
-        border: $borderSettings;
         text-align: center;
         // font-family: 'Poppins', sans-serif;
         font-family: 'Permanent Marker', cursive;
-        // margin-top: 18px;
         padding: 15px;
 
         a{
@@ -113,48 +131,57 @@ nav{
 }
 
 .category_section{
+    line-height: 50px;
     grid-area: category_section;
     border: $borderSettings;
     height: 400px;
     padding: 10px;
 
     h2{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Permanent Marker', cursive;
         text-align: center;
-        border: $borderSettings;
+        font-size: 1.75em;
     }
 
     .hiking_box{
-        border: $borderSettings;
-        height: 240px;
-        width: 24%;
-        float: left;
-        border-radius: 50%;
+       @include categoryImg;
+       background: url('../images/hike.png');
+       @include backgroundImgSettings;
         
     }
     .fishing_box{
-        border: $borderSettings;
-        height: 240px;
-        width: 24%;
-        float: left;
-        border-radius: 50%;
-        margin-left: 10px;
+        @include categoryImg;
+        background: url('../images/fish.png');
+        @include backgroundImgSettings;
+        margin-left: $categoryImgSpace;
     }
     .climbing_box{
-        border: $borderSettings;
-        height: 240px;
-        width: 24%;
-        float: left;
-        border-radius: 50%;
-        margin-left: 10px;
+        @include categoryImg;
+        background: url('../images/rock.png');
+        @include backgroundImgSettings;
+        margin-left: $categoryImgSpace;
     }
     .camping_box{
-        border: $borderSettings;
-        height: 240px;
-        width: 24%;
-        float: left;
-        border-radius: 50%;
-        margin-left: 10px;
+        @include categoryImg;
+        background: url('../images/tent.png');
+        @include backgroundImgSettings;
+        margin-left: $categoryImgSpace;
+    }
+
+    .hiking_text{
+        @include categoryText;
+    }
+    .fishing_text{
+        @include categoryText;
+        margin-left: $categoryImgSpace;
+    }
+    .climbing_text{
+        @include categoryText;
+        margin-left: $categoryImgSpace;
+    }
+    .camping_text{
+        @include categoryText;
+        margin-left: $categoryImgSpace;
     }
 }
 
