@@ -118,9 +118,11 @@ nav{
 
 .body_content{
     grid-area: body_content;
-    height: 1500px;
     display: grid;
-    grid-template-areas: 'side_bar category_section category_section category_section ads_bar';
+    grid-template-areas: 'side_bar category_section category_section category_section ads_bar'
+    'side_bar hiking_category hiking_category hiking_category ads_bar'
+    'side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar'
+    ;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
 }
 
@@ -191,4 +193,29 @@ nav{
 .ads_bar{
     grid-area: ads_bar;
     border: $borderSettings;
+}
+
+.hiking_category{
+    grid-area: hiking_category;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hiking_img1{
+    grid-area: hiking_img1;
+    border: $borderSettings;
+    height: 200px;
+}
+.hiking_img2{
+    grid-area: hiking_img2;
+    border: $borderSettings;
+    height: 200px;
+}
+.hiking_img3{
+    grid-area: hiking_img3;
+    border: $borderSettings;
+    height: 200px;
 }
