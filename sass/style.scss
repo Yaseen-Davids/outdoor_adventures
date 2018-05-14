@@ -12,11 +12,6 @@ $borderSettings: 1px solid black;
     background-repeat: no-repeat;
 }
 
-// This is the grid container
-// #container{
-//     height: 2000px;
-// }
-
 .grid-container{
     display: grid;
     grid-template-areas: 'home-img home-img home-img'
@@ -106,10 +101,10 @@ nav{
 
 .body_content{
     grid-area: body_content;
-    height: 500px;
+    height: 1500px;
     display: grid;
-    grid-template-areas: 'side_bar quote_section';
-    grid-template-columns: 12% 88%;
+    grid-template-areas: 'side_bar category_section category_section category_section ads_bar';
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
 }
 
 .side_bar{
@@ -117,7 +112,53 @@ nav{
     border: $borderSettings;
 }
 
-.quote_section{
-    grid-area: quote_section;
+.category_section{
+    grid-area: category_section;
+    border: $borderSettings;
+    height: 400px;
+    padding: 10px;
+
+    h2{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        border: $borderSettings;
+    }
+
+    .hiking_box{
+        border: $borderSettings;
+        height: 240px;
+        width: 24%;
+        float: left;
+        border-radius: 50%;
+        
+    }
+    .fishing_box{
+        border: $borderSettings;
+        height: 240px;
+        width: 24%;
+        float: left;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    .climbing_box{
+        border: $borderSettings;
+        height: 240px;
+        width: 24%;
+        float: left;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    .camping_box{
+        border: $borderSettings;
+        height: 240px;
+        width: 24%;
+        float: left;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
+
+.ads_bar{
+    grid-area: ads_bar;
     border: $borderSettings;
 }

@@ -64,17 +64,54 @@ nav {
 
 .body_content {
   grid-area: body_content;
-  height: 500px;
+  height: 1500px;
   display: grid;
-  grid-template-areas: 'side_bar quote_section';
-  grid-template-columns: 12% 88%; }
+  grid-template-areas: 'side_bar category_section category_section category_section ads_bar';
+  grid-template-columns: 15% 1fr 1fr 1fr 15%; }
 
 .side_bar {
   grid-area: side_bar;
   border: 1px solid black; }
 
-.quote_section {
-  grid-area: quote_section;
+.category_section {
+  grid-area: category_section;
+  border: 1px solid black;
+  height: 400px;
+  padding: 10px; }
+  .category_section h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border: 1px solid black; }
+  .category_section .hiking_box {
+    border: 1px solid black;
+    height: 240px;
+    width: 24%;
+    float: left;
+    border-radius: 50%; }
+  .category_section .fishing_box {
+    border: 1px solid black;
+    height: 240px;
+    width: 24%;
+    float: left;
+    border-radius: 50%;
+    margin-left: 10px; }
+  .category_section .climbing_box {
+    border: 1px solid black;
+    height: 240px;
+    width: 24%;
+    float: left;
+    border-radius: 50%;
+    margin-left: 10px; }
+  .category_section .camping_box {
+    border: 1px solid black;
+    height: 240px;
+    width: 24%;
+    float: left;
+    border-radius: 50%;
+    margin-left: 10px; }
+
+.ads_bar {
+  grid-area: ads_bar;
   border: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */
