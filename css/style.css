@@ -1,0 +1,80 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: "home-img home-img home-img" "navbar navbar navbar" "body_content body_content body_content";
+  grid-template-columns: 1fr 1fr 1fr; }
+
+body {
+  margin: 0; }
+
+.home-img {
+  grid-area: home-img;
+  height: 750px;
+  background: url("../images/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -5px; }
+  .home-img .header_logo {
+    margin-top: 200px; }
+    .home-img .header_logo h1 {
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 3em; }
+    .home-img .header_logo .header_line {
+      text-decoration: line-through;
+      text-decoration-color: #20a7f5;
+      text-decoration-style: double;
+      color: transparent; }
+    .home-img .header_logo .Colortext {
+      background-color: rgba(43, 43, 43, 0.92);
+      padding: 20px; }
+    .home-img .header_logo h3 {
+      color: white;
+      background-color: rgba(43, 43, 43, 0.92);
+      padding: 15px;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 250px;
+      margin-right: 250px;
+      border-radius: 10px; }
+
+nav {
+  grid-area: navbar;
+  border: 1px solid black;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: 0.92;
+  z-index: 100; }
+  nav #nav_links {
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding: 15px; }
+    nav #nav_links a {
+      color: #35eb11;
+      text-decoration: none;
+      margin-right: 30px;
+      margin-left: 20px;
+      font-size: 1.4em;
+      border-bottom: 1px solid transparent;
+      transition: all ease-in-out 0.4s; }
+      nav #nav_links a:hover {
+        color: black;
+        border-bottom-color: black; }
+
+.body_content {
+  grid-area: body_content;
+  height: 500px;
+  display: grid;
+  grid-template-areas: 'side_bar quote_section';
+  grid-template-columns: 12% 88%; }
+
+.side_bar {
+  grid-area: side_bar;
+  border: 1px solid black; }
+
+.quote_section {
+  grid-area: quote_section;
+  border: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */

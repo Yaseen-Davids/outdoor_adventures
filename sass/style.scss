@@ -1,0 +1,123 @@
+// THIS IS THE CSS STYLESHEET
+
+// This is the variables
+$navbarTextColor: rgb(53, 235, 17);
+$navbarHoverColor : black;
+$borderSettings: 1px solid black;
+
+// This is the mixins
+@mixin backgroundImgSettings{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// This is the grid container
+// #container{
+//     height: 2000px;
+// }
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'home-img home-img home-img'
+    'navbar navbar navbar'
+    'body_content body_content body_content'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body{
+    margin: 0;
+}
+
+.home-img{
+    grid-area: home-img;
+    height: 750px;
+    background: url('../images/home.jpg');
+    @include backgroundImgSettings;
+    margin-top: -5px;
+
+    .header_logo{
+        margin-top: 200px;
+
+        h1{
+            color: white;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 3em;
+        }
+
+        .header_line{
+            text-decoration: line-through;
+            text-decoration-color: rgb(32, 167, 245);
+            text-decoration-style: double;
+            color: transparent;
+        }
+        .Colortext{
+            background-color: rgba(43, 43, 43, 0.92);
+            padding: 20px;
+        }
+
+        h3{
+            color: white;
+            background-color: rgba(43, 43, 43, 0.92);
+            padding: 15px;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 250px;
+            margin-right: 250px;
+            border-radius: 10px;
+        }
+    }
+}
+
+nav{
+    grid-area: navbar;
+    border: $borderSettings;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    opacity: 0.92;
+    z-index: 100;
+
+
+    #nav_links{
+        border: $borderSettings;
+        text-align: center;
+        // font-family: 'Poppins', sans-serif;
+        font-family: 'Permanent Marker', cursive;
+        // margin-top: 18px;
+        padding: 15px;
+
+        a{
+            color: $navbarTextColor;
+            text-decoration: none;
+            margin-right: 30px;
+            margin-left: 20px;
+            font-size: 1.4em;
+            border-bottom: 1px solid transparent;
+            transition: all ease-in-out 0.4s;
+
+            &:hover{
+                color: $navbarHoverColor;
+                border-bottom-color: $navbarHoverColor;
+            }
+        }
+    }
+}
+
+.body_content{
+    grid-area: body_content;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 'side_bar quote_section';
+    grid-template-columns: 12% 88%;
+}
+
+.side_bar{
+    grid-area: side_bar;
+    border: $borderSettings;
+}
+
+.quote_section{
+    grid-area: quote_section;
+    border: $borderSettings;
+}
