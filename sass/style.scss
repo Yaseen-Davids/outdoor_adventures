@@ -6,28 +6,55 @@ $navbarHoverColor : black;
 $borderSettings: 1px solid black;
 $categoryImgSpace: 100px;
 $categoryCenter: 70px;
+$categoryColor: rgb(0, 138, 202);
 
 // This is the mixins
 @mixin backgroundImgSettings{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin logoImgSettings{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-@mixin categoryImg{
+@mixin logoImg{
     height: 100px;
-    width: 15%;
+    width: 14%;
     float: left;
     // border-radius: 50%;
 }
-@mixin categoryText{
+@mixin logoText{
     height: 50px;
-    width: 15%;
+    width: 14%;
     float: left;
     // border-radius: 50%;
 
     h3{
         text-align: center;
         font-family: 'Poppins', sans-serif;
+        font-size: 1.25em;
+    }
+}
+@mixin category_img{
+    height: 300px;
+    line-height: 20px;
+    // border: $borderSettings;
+}
+@mixin category_text{
+    // border: $borderSettings;
+    height: 40px;
+    text-align: center;
+    color: black;
+    font-size: 1.25em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+}
+
+@mixin paraHeader{
+    h4{
+        text-decoration: underline;
         font-size: 1.25em;
     }
 }
@@ -50,7 +77,7 @@ body{
     height: 900px;
     background: url('../images/home.jpg');
     @include backgroundImgSettings;
-    margin-top: -5px;
+    // margin-top: -30px;
 
     .header_logo{
         margin-top: 200px;
@@ -121,9 +148,12 @@ nav{
     display: grid;
     grid-template-areas: 'side_bar category_section category_section category_section ads_bar'
     'side_bar hiking_category hiking_category hiking_category ads_bar'
+    'side_bar hiking_text1 hiking_text2 hiking_text3 ads_bar'
     'side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar'
+    'side_bar info_box1 info_box1 info_box1 ads_bar'
     ;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    grid-gap: 10px;
 }
 
 .side_bar{
@@ -145,47 +175,47 @@ nav{
     }
 
     .hiking_box{
-       @include categoryImg;
+       @include logoImg;
        background: url('../images/hike.png');
-       @include backgroundImgSettings;
+       @include logoImgSettings;
        margin-left: $categoryCenter;
         
     }
     .fishing_box{
-        @include categoryImg;
+        @include logoImg;
         background: url('../images/fish.png');
-        @include backgroundImgSettings;
+        @include logoImgSettings;
         margin-left: $categoryImgSpace;
     }
     .climbing_box{
-        @include categoryImg;
+        @include logoImg;
         background: url('../images/rock.png');
-        @include backgroundImgSettings;
+        @include logoImgSettings;
         margin-left: $categoryImgSpace;
         margin-right: $categoryCenter;
     }
     .camping_box{
-        @include categoryImg;
+        @include logoImg;
         background: url('../images/tent.png');
-        @include backgroundImgSettings;
+        @include logoImgSettings;
         margin-right: $categoryCenter;
     }
 
     .hiking_text{
-        @include categoryText;
+        @include logoText;
         margin-left: $categoryCenter;
     }
     .fishing_text{
-        @include categoryText;
+        @include logoText;
         margin-left: $categoryImgSpace;
     }
     .climbing_text{
-        @include categoryText;
+        @include logoText;
         margin-left: $categoryImgSpace;
         margin-right: $categoryCenter;
     }
     .camping_text{
-        @include categoryText;
+        @include logoText;
         margin-right: $categoryCenter;
     }
 }
@@ -198,24 +228,71 @@ nav{
 .hiking_category{
     grid-area: hiking_category;
     padding: 5px;
-    background-color: #333;
+    background-color: $categoryColor;
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
 }
 
-.hiking_img1{
+#hiking_text1{
+    grid-area: hiking_text1;
+    @include category_text;
+}
+#hiking_text2{
+    grid-area: hiking_text2;
+    @include category_text;
+}
+#hiking_text3{
+    grid-area: hiking_text3;
+    @include category_text;
+}
+
+#hiking_img1{
     grid-area: hiking_img1;
-    border: $borderSettings;
-    height: 200px;
+    @include category_img;
+    background: url('../images/lionshead.jpg');
+    @include backgroundImgSettings();
 }
-.hiking_img2{
+#hiking_img2{
     grid-area: hiking_img2;
-    border: $borderSettings;
-    height: 200px;
+    @include category_img;
+    height: 280px;
+    background: url('../images/skeleton.jpg');
+    @include backgroundImgSettings();
 }
-.hiking_img3{
+#hiking_img3{
     grid-area: hiking_img3;
-    border: $borderSettings;
-    height: 200px;
+    @include category_img;
+    background: url('../images/motte.jpg');
+    @include backgroundImgSettings();
+}
+
+.info_box1{
+    grid-area: info_box1;
+    height: 320px;
+    margin-left: 100px;
+    margin-right: 100px;
+    // margin-top: 10px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+
+    #lionshead{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #skeleton{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #motte{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+}
+#infobox{
+    display: none;
 }

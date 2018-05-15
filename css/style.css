@@ -10,10 +10,9 @@ body {
   grid-area: home-img;
   height: 900px;
   background: url("../images/home.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  margin-top: -5px; }
+  background-repeat: no-repeat; }
   .home-img .header_logo {
     margin-top: 200px; }
     .home-img .header_logo h1 {
@@ -63,8 +62,9 @@ nav {
 .body_content {
   grid-area: body_content;
   display: grid;
-  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar";
-  grid-template-columns: 15% 1fr 1fr 1fr 15%; }
+  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar hiking_text1 hiking_text2 hiking_text3 ads_bar" "side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar" "side_bar info_box1 info_box1 info_box1 ads_bar";
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
+  grid-gap: 10px; }
 
 .side_bar {
   grid-area: side_bar;
@@ -82,7 +82,7 @@ nav {
     font-size: 1.75em; }
   .category_section .hiking_box {
     height: 100px;
-    width: 15%;
+    width: 14%;
     float: left;
     background: url("../images/hike.png");
     background-size: contain;
@@ -91,7 +91,7 @@ nav {
     margin-left: 70px; }
   .category_section .fishing_box {
     height: 100px;
-    width: 15%;
+    width: 14%;
     float: left;
     background: url("../images/fish.png");
     background-size: contain;
@@ -100,7 +100,7 @@ nav {
     margin-left: 100px; }
   .category_section .climbing_box {
     height: 100px;
-    width: 15%;
+    width: 14%;
     float: left;
     background: url("../images/rock.png");
     background-size: contain;
@@ -110,7 +110,7 @@ nav {
     margin-right: 70px; }
   .category_section .camping_box {
     height: 100px;
-    width: 15%;
+    width: 14%;
     float: left;
     background: url("../images/tent.png");
     background-size: contain;
@@ -119,7 +119,7 @@ nav {
     margin-right: 70px; }
   .category_section .hiking_text {
     height: 50px;
-    width: 15%;
+    width: 14%;
     float: left;
     margin-left: 70px; }
     .category_section .hiking_text h3 {
@@ -128,7 +128,7 @@ nav {
       font-size: 1.25em; }
   .category_section .fishing_text {
     height: 50px;
-    width: 15%;
+    width: 14%;
     float: left;
     margin-left: 100px; }
     .category_section .fishing_text h3 {
@@ -137,7 +137,7 @@ nav {
       font-size: 1.25em; }
   .category_section .climbing_text {
     height: 50px;
-    width: 15%;
+    width: 14%;
     float: left;
     margin-left: 100px;
     margin-right: 70px; }
@@ -147,7 +147,7 @@ nav {
       font-size: 1.25em; }
   .category_section .camping_text {
     height: 50px;
-    width: 15%;
+    width: 14%;
     float: left;
     margin-right: 70px; }
     .category_section .camping_text h3 {
@@ -162,24 +162,94 @@ nav {
 .hiking_category {
   grid-area: hiking_category;
   padding: 5px;
-  background-color: #333;
+  background-color: #008aca;
   color: white;
   text-align: center;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px; }
 
-.hiking_img1 {
+#hiking_text1 {
+  grid-area: hiking_text1;
+  height: 40px;
+  text-align: center;
+  color: black;
+  font-size: 1.25em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px; }
+
+#hiking_text2 {
+  grid-area: hiking_text2;
+  height: 40px;
+  text-align: center;
+  color: black;
+  font-size: 1.25em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px; }
+
+#hiking_text3 {
+  grid-area: hiking_text3;
+  height: 40px;
+  text-align: center;
+  color: black;
+  font-size: 1.25em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px; }
+
+#hiking_img1 {
   grid-area: hiking_img1;
-  border: 1px solid black;
-  height: 200px; }
+  height: 300px;
+  line-height: 20px;
+  background: url("../images/lionshead.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
-.hiking_img2 {
+#hiking_img2 {
   grid-area: hiking_img2;
-  border: 1px solid black;
-  height: 200px; }
+  height: 300px;
+  line-height: 20px;
+  height: 280px;
+  background: url("../images/skeleton.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
-.hiking_img3 {
+#hiking_img3 {
   grid-area: hiking_img3;
-  border: 1px solid black;
-  height: 200px; }
+  height: 300px;
+  line-height: 20px;
+  background: url("../images/motte.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.info_box1 {
+  grid-area: info_box1;
+  height: 320px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  font-family: 'Poppins', sans-serif; }
+  .info_box1 #lionshead {
+    margin-top: 10px;
+    display: none; }
+    .info_box1 #lionshead h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+  .info_box1 #skeleton {
+    margin-top: 10px;
+    display: none; }
+    .info_box1 #skeleton h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+  .info_box1 #motte {
+    margin-top: 10px;
+    display: none; }
+    .info_box1 #motte h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+
+#infobox {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
