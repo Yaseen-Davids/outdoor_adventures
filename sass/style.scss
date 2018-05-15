@@ -1,30 +1,41 @@
 // THIS IS THE CSS STYLESHEET
 
 // This is the variables
+
+// This is for the navbar text color
 $navbarTextColor: rgb(53, 235, 17);
+// This is the for the navbar text when hovering
 $navbarHoverColor : black;
+// This is the default border code
 $borderSettings: 1px solid black;
+// This is the category image space
 $categoryImgSpace: 100px;
+// This is to centre the text
 $categoryCenter: 70px;
+// This is the category header color
 $categoryColor: rgb(0, 138, 202);
 
 // This is the mixins
+// This is for the images that should cover the div
 @mixin backgroundImgSettings{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+// This is for the images that should contain the div
 @mixin logoImgSettings{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
+// This is the properties for the logo images
 @mixin logoImg{
     height: 100px;
     width: 14%;
     float: left;
     // border-radius: 50%;
 }
+// This is the properties for the logo text
 @mixin logoText{
     height: 50px;
     width: 14%;
@@ -37,11 +48,13 @@ $categoryColor: rgb(0, 138, 202);
         font-size: 1.25em;
     }
 }
+// This is the code for the category images
 @mixin category_img{
     height: 300px;
     line-height: 20px;
     // border: $borderSettings;
 }
+// This is for the category text
 @mixin category_text{
     // border: $borderSettings;
     height: 40px;
@@ -51,7 +64,7 @@ $categoryColor: rgb(0, 138, 202);
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
 }
-
+// This is for the header of the info boxes
 @mixin paraHeader{
     h4{
         text-decoration: underline;
@@ -59,6 +72,9 @@ $categoryColor: rgb(0, 138, 202);
     }
 }
 
+// ############################################### CSS STYLING #####################################################3
+
+// This is the main grid container
 .grid-container{
     display: grid;
     grid-template-areas: 'home-img home-img home-img'
@@ -72,6 +88,7 @@ body{
     margin: 0;
 }
 
+// This is the home page home image
 .home-img{
     grid-area: home-img;
     height: 900px;
@@ -79,26 +96,29 @@ body{
     @include backgroundImgSettings;
     // margin-top: -30px;
 
+    // This the header logo
     .header_logo{
         margin-top: 200px;
 
+        // This is the logo settings
         h1{
             color: white;
             font-family: 'Permanent Marker', cursive;
             font-size: 3em;
         }
 
+        // This the horizontal lines by the header logo
         .header_line{
             text-decoration: line-through;
             text-decoration-color: rgb(32, 167, 245);
             text-decoration-style: double;
             color: transparent;
         }
+        // This is the mini sections under the header
         .Colortext{
             background-color: rgba(43, 43, 43, 0.92);
             padding: 20px;
         }
-
         h3{
             color: white;
             background-color: rgba(43, 43, 43, 0.92);
@@ -111,6 +131,7 @@ body{
     }
 }
 
+// This is the navbar
 nav{
     grid-area: navbar;
     position: fixed;
@@ -119,13 +140,14 @@ nav{
     opacity: 0.92;
     z-index: 100;
 
-
+    // This is the navbar links
     #nav_links{
         text-align: center;
         // font-family: 'Poppins', sans-serif;
         font-family: 'Permanent Marker', cursive;
         padding: 15px;
 
+        // This is the links for the navbar
         a{
             color: $navbarTextColor;
             text-decoration: none;
@@ -143,6 +165,7 @@ nav{
     }
 }
 
+// This is the main body content
 .body_content{
     grid-area: body_content;
     display: grid;
@@ -156,11 +179,13 @@ nav{
     grid-gap: 10px;
 }
 
+// This is the side bar
 .side_bar{
     grid-area: side_bar;
     border: $borderSettings;
 }
 
+// This is the category sections
 .category_section{
     grid-area: category_section;
     border: $borderSettings;
@@ -174,6 +199,7 @@ nav{
         font-size: 1.75em;
     }
 
+    // This is the hiking logo
     .hiking_box{
        @include logoImg;
        background: url('../images/hike.png');
@@ -181,12 +207,14 @@ nav{
        margin-left: $categoryCenter;
         
     }
+     // This is the fishing logo
     .fishing_box{
         @include logoImg;
         background: url('../images/fish.png');
         @include logoImgSettings;
         margin-left: $categoryImgSpace;
     }
+     // This is the rock climbing logo
     .climbing_box{
         @include logoImg;
         background: url('../images/rock.png');
@@ -194,6 +222,7 @@ nav{
         margin-left: $categoryImgSpace;
         margin-right: $categoryCenter;
     }
+     // This is the camping logo
     .camping_box{
         @include logoImg;
         background: url('../images/tent.png');
@@ -201,30 +230,36 @@ nav{
         margin-right: $categoryCenter;
     }
 
+    // This is the hiking logo text
     .hiking_text{
         @include logoText;
         margin-left: $categoryCenter;
     }
+    // This is the fishing logo text    
     .fishing_text{
         @include logoText;
         margin-left: $categoryImgSpace;
     }
+    // This is the rock climbing logo text
     .climbing_text{
         @include logoText;
         margin-left: $categoryImgSpace;
         margin-right: $categoryCenter;
     }
+    // This is the camping  logo text
     .camping_text{
         @include logoText;
         margin-right: $categoryCenter;
     }
 }
 
+// This is the ads bar
 .ads_bar{
     grid-area: ads_bar;
     border: $borderSettings;
 }
 
+// This is the hiking category
 .hiking_category{
     grid-area: hiking_category;
     padding: 5px;
@@ -235,6 +270,7 @@ nav{
     margin-top: 50px;
 }
 
+// This is the hiking category names
 #hiking_text1{
     grid-area: hiking_text1;
     @include category_text;
@@ -248,6 +284,7 @@ nav{
     @include category_text;
 }
 
+// This is the hiking category images
 #hiking_img1{
     grid-area: hiking_img1;
     @include category_img;
@@ -268,6 +305,7 @@ nav{
     @include backgroundImgSettings();
 }
 
+// This is the information section of the hiking category
 .info_box1{
     grid-area: info_box1;
     height: 320px;

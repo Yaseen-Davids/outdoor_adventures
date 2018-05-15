@@ -4,7 +4,7 @@
 
 //     if (currentScrollPos < 750) {
 //         navHead.style.display = "none";
-//         navHead.style.opacity = "0";
+//         navHead.style.backgroundColor = "#333";
 
 //     }
 //     else if (currentScrollPos > 750) {
