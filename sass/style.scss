@@ -298,19 +298,35 @@ nav{
     @include category_img;
     background: url('../images/lionshead.jpg');
     @include backgroundImgSettings();
+    transition: all ease-out 0.5s;
+    &:hover{
+        transform: scale(1.08);
+        transition: all ease-out 0.5s;
+    }
 }
+
 #hiking_img2{
     grid-area: hiking_img2;
     @include category_img;
     height: 280px;
     background: url('../images/skeleton.jpg');
     @include backgroundImgSettings();
+    transition: all ease-out 0.5s;
+    &:hover{
+        transform: scale(1.08);
+        transition: all ease-out 0.5s;
+    }
 }
 #hiking_img3{
     grid-area: hiking_img3;
     @include category_img;
     background: url('../images/motte.jpg');
     @include backgroundImgSettings();
+    transition: all ease-out 0.5s;
+    &:hover{
+        transform: scale(1.08);
+        transition: all ease-out 0.5s;
+    }
 }
 
 // This is the information section of the hiking category
