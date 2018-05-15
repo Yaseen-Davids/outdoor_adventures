@@ -7,7 +7,7 @@ $navbarTextColor: rgb(53, 235, 17);
 // This is the for the navbar text when hovering
 $navbarHoverColor : black;
 // This is the default border code
-$borderSettings: 1px solid black;
+$borderSettings: 1px solid transparent;
 // This is the category image space
 $categoryImgSpace: 100px;
 // This is to centre the text
@@ -70,6 +70,14 @@ $categoryColor: rgb(0, 138, 202);
         text-decoration: underline;
         font-size: 1.25em;
     }
+}
+@mixin categoryHeader{
+    padding: 5px;
+    background-color: $categoryColor;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
 }
 
 // ############################################### CSS STYLING #####################################################3
@@ -171,9 +179,12 @@ nav{
     display: grid;
     grid-template-areas: 'side_bar category_section category_section category_section ads_bar'
     'side_bar hiking_category hiking_category hiking_category ads_bar'
-    'side_bar hiking_text1 hiking_text2 hiking_text3 ads_bar'
+    'side_bar cat_text1 cat_text1 cat_text1 ads_bar'
     'side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar'
     'side_bar info_box1 info_box1 info_box1 ads_bar'
+    'side_bar fishing_category fishing_category fishing_category ads_bar'
+    'side_bar cat_text2 cat_text2 cat_text2 ads_bar'
+    'side_bar fishing_img1 fishing_img2 fishing_img3 ads_bar'
     ;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
     grid-gap: 10px;
@@ -259,28 +270,25 @@ nav{
     border: $borderSettings;
 }
 
+// ################################### HIKING CATEGORY ###################################
+
 // This is the hiking category
 .hiking_category{
     grid-area: hiking_category;
-    padding: 5px;
-    background-color: $categoryColor;
-    color: white;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 50px;
+    @include categoryHeader;
 }
 
 // This is the hiking category names
-#hiking_text1{
-    grid-area: hiking_text1;
+#cat_text1{
+    grid-area: cat_text1;
     @include category_text;
 }
-#hiking_text2{
-    grid-area: hiking_text2;
+#cat_text1{
+    grid-area: cat_text1;
     @include category_text;
 }
-#hiking_text3{
-    grid-area: hiking_text3;
+#cat_text1{
+    grid-area: cat_text1;
     @include category_text;
 }
 
@@ -308,12 +316,15 @@ nav{
 // This is the information section of the hiking category
 .info_box1{
     grid-area: info_box1;
-    height: 320px;
+    height: 300px;
     margin-left: 100px;
     margin-right: 100px;
-    // margin-top: 10px;
     display: none;
     font-family: 'Poppins', sans-serif;
+
+    h4{
+        color: rgb(10, 123, 252);
+    }
 
     #lionshead{
         margin-top: 10px;
@@ -333,4 +344,45 @@ nav{
 }
 #infobox{
     display: none;
+}
+
+// ################################### FISHING CATEGORY ###################################
+
+.fishing_category{
+    grid-area: fishing_category;
+    @include categoryHeader;
+}
+
+#cat_text2{
+    grid-area: cat_text2;
+    @include category_text;
+}
+#cat_text2{
+    grid-area: cat_text2;
+    @include category_text;
+}
+#cat_text2{
+    grid-area: cat_text2;
+    @include category_text;
+}
+
+// This is the fishing category images
+#fishing_img1{
+    grid-area: fishing_img1;
+    @include category_img;
+    background: url('../images/lionshead.jpg');
+    @include backgroundImgSettings();
+}
+#fishing_img2{
+    grid-area: fishing_img2;
+    @include category_img;
+    height: 320px;
+    background: url('../images/skeleton.jpg');
+    @include backgroundImgSettings();
+}
+#fishing_img3{
+    grid-area: fishing_img3;
+    @include category_img;
+    background: url('../images/motte.jpg');
+    @include backgroundImgSettings();
 }

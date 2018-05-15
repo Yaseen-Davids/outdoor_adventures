@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
     <!-- This is the link to my js script -->
     <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body onscroll="checkHeight();" onload="checkHeight();">
     
@@ -36,10 +37,11 @@
             <nav id="navbar">
                 <!-- This is the navbar links -->
                 <div id="nav_links">
-                    <a href="#">Home</a>
-                    <a href="#">Categories</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#home">Home</a>
+                    <a href="#categories" onclick="smoothScroll()">Categories</a>
+                    <!-- onclick="smoothScroll()" -->
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
             
             </nav>
@@ -74,32 +76,31 @@
                     </div>
                 </div>
 
-                <!-- THIS IS THE HIKING CATEGORY  -->
-                <div class="hiking_category">
+                <!-- ##################################### THIS IS THE HIKING CATEGORY ##################################### -->
+                <div class="hiking_category" id="categories">
                     <h2>Hiking :</h2>
                 </div>
 
                 <!-- This is Lions head header -->
-                <a href="#lionshead"><div id="hiking_text1" onclick="showLionInfo()">
+                <a href="#lionshead" onclick="smoothScroll()"><div id="cat_text1" onclick="showLionInfo()">
                     Hike to Lions Head
                 </div></a>
                 <!-- This is the skeleton header -->
-                <a href="#skeleton"><div id="hiking_text2" onclick="showSkeletonInfo()">
+                <a href="#skeleton" onclick="smoothScroll()"><div id="cat_text1" onclick="showSkeletonInfo()">
                     Hike to Skeleton Gorge
                 </div></a>
                 <!-- This is the motte header -->
-                <a href="#motte"><div id="hiking_text3" onclick="showMotteInfo()">
+                <a href="#motte" onclick="smoothScroll()"><div id="cat_text1" onclick="showMotteInfo()">
                     Hike to La Motte
                 </div></a>
 
                  <!-- This is Lions head image -->
-                <a href="#lionshead"><div id="hiking_img1" onclick="showLionInfo()"></div></a>
+                <a href="#lionshead" onclick="smoothScroll()"><div id="hiking_img1" onclick="showLionInfo()"></div></a>
                 <!-- This is the skeleton image -->
-                <a href="#skeleton"><div id="hiking_img2" onclick="showSkeletonInfo()"></div></a>
+                <a href="#skeleton" onclick="smoothScroll()"><div id="hiking_img2" onclick="showSkeletonInfo()"></div></a>
                  <!-- This is the motte image -->
-                <a href="#motte"> <div id="hiking_img3" onclick="showMotteInfo()"></div></a>
+                <a href="#motte" onclick="smoothScroll()"><div id="hiking_img3" onclick="showMotteInfo()"></div></a>
                
-
                 <!-- This is the information box -->
                 <div class="info_box1" id="infobox">
                     <!-- This is the lions head information -->
@@ -127,8 +128,33 @@
                     </div>
                 </div>
 
+                <!-- ##################################### THIS IS THE FISHING CATEGORY ##################################### -->
+                <div class="fishing_category">
+                    <h2>Fishing :</h2>
+                </div>
+                
+                <!-- This is Lions head header -->
+                <a href="#"><div id="cat_text2">
+                    Hike to Lions Head
+                </div></a>
+                <!-- This is the skeleton header -->
+                <a href="#"><div id="cat_text2">
+                    Hike to Skeleton Gorge
+                </div></a>
+                 <!-- This is the motte header -->
+                <a href="#"><div id="cat_text2">
+                    Hike to La Motte
+                </div></a>
+    
                 <!-- This is the ads bar -->
                 <div class="ads_bar"></div>
+
+                <!-- This is the fishing image 1 -->
+                <a href="#"><div id="fishing_img1"></div></a>
+                <!-- This is the fishing image 2 -->
+                <a href="#"><div id="fishing_img2"></div></a>
+                 <!-- This is the fishing image 3 -->
+                <a href="#"><div id="fishing_img3"></div></a>
 
             </div>
 

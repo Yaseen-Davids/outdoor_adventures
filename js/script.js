@@ -13,6 +13,12 @@
 //     }
 // }
 
+// function smoothScroll() {
+//     $('html, body').animate({
+//         scrollTop: $($(this).attr('href')).offset().top
+//     }, 1700);
+// }
+
 function showLionInfo() {
     let boxInfo = document.getElementById("infobox");
     let info1Show = document.getElementById("lionshead");
