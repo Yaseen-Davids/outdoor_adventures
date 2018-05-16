@@ -98,6 +98,7 @@ $categoryColor: rgb(0, 138, 202);
     grid-template-areas: 'home-img home-img home-img'
     'navbar navbar navbar'
     'body_content body_content body_content'
+    'quote_section quote_section quote_section'
     ;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -584,4 +585,37 @@ nav{
 }
 #infobox4{
     display: none;
+}
+
+.quote_section{
+    grid-area: quote_section;
+    text-align: center;
+    color: white;
+    background: rgba(4, 145, 23, 0.726);
+    padding: 40px;
+    letter-spacing: 2px;
+    font-family: 'Varela', sans-serif;
+    margin-top: 120px;
+
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1.65em;
+        color: black;
+    }
+
+    button{
+        background-color: rgb(73, 73, 73);
+        color: white;
+        padding: 16px 32px;
+        border: none;
+        transition: 0.3s;
+        font-size: 1.25em;
+        font-family: 'Varela', sans-serif;
+
+        &:hover{
+            background-color: rgb(0, 0, 0);
+        }
+    }
 }
