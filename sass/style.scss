@@ -69,6 +69,10 @@ $categoryColor: rgb(0, 138, 202);
     font-size: 1.25em;
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
+
+    a:link{
+        text-decoration: none;
+    }
 }
 // This is for the header of the info boxes
 @mixin paraHeader{
@@ -83,7 +87,7 @@ $categoryColor: rgb(0, 138, 202);
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 // ############################################### CSS STYLING #####################################################
@@ -179,7 +183,7 @@ nav{
     }
 }
 
-// MAIN BODY GRID CONTENT
+// ################################ MAIN BODY CONTENT GRID ################################
 .body_content{
     grid-area: body_content;
     display: grid;
@@ -190,6 +194,8 @@ nav{
     'side_bar fishing_content fishing_content fishing_content ads_bar'
     'side_bar rock_category rock_category rock_category ads_bar'
     'side_bar rock_content rock_content rock_content ads_bar'
+    'side_bar camp_category camp_category camp_category ads_bar'
+    'side_bar camp_content camp_content camp_content ads_bar'
     ;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
     grid-gap: 10px;
@@ -503,5 +509,79 @@ nav{
     }
 }
 #infobox3{
+    display: none;
+}
+
+// ################################### CAMPING CATEGORY ###################################
+.camp_category{
+    grid-area: camp_category;
+    @include categoryHeader;
+}
+
+.camp_cat_content{
+    display: grid;
+    grid-area: camp_content;
+    grid-template-areas: 'cat_text1 cat_text1 cat_text1'
+    'camp_img1 camp_img2 camp_img3'
+    'info_box4 info_box4 info_box4';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#cat_text1{
+    grid-area: cat_text1;
+    @include category_text;
+}
+
+#camp_img1{
+    grid-area: camp_img1;
+    @include category_img;
+    background: url('../images/secretfalls.jpg');
+    @include backgroundImgSettings();
+}
+
+#camp_img2{
+    grid-area: camp_img2;
+    @include category_img;
+    height: 280px;
+    background: url('../images/beaverlac.jpg');
+    @include backgroundImgSettings();
+}
+#camp_img3{
+    grid-area: camp_img3;
+    @include category_img;
+    background: url('../images/wolfkop.jpg');
+    @include backgroundImgSettings();
+}
+
+.info_box4{
+    grid-area: info_box4;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+
+    h4{
+        color: rgb(10, 123, 252);
+    }
+
+    #secretfalls{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #beaverlac{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #wolfkop{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+}
+#infobox4{
     display: none;
 }

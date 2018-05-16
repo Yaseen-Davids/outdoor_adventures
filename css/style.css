@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-areas: "home-img home-img home-img" "navbar navbar navbar" "body_content body_content body_content";
+  grid-template-areas: "home-img home-img home-img" "navbar navbar navbar" "body_content body_content body_content" "quote_section quote_section quote_section";
   grid-template-columns: 1fr 1fr 1fr; }
 
 body {
@@ -62,7 +62,7 @@ nav {
 .body_content {
   grid-area: body_content;
   display: grid;
-  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar hiking_content hiking_content hiking_content ads_bar" "side_bar fishing_category fishing_category fishing_category ads_bar" "side_bar fishing_content fishing_content fishing_content ads_bar" "side_bar rock_category rock_category rock_category ads_bar" "side_bar rock_content rock_content rock_content ads_bar";
+  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar hiking_content hiking_content hiking_content ads_bar" "side_bar fishing_category fishing_category fishing_category ads_bar" "side_bar fishing_content fishing_content fishing_content ads_bar" "side_bar rock_category rock_category rock_category ads_bar" "side_bar rock_content rock_content rock_content ads_bar" "side_bar camp_category camp_category camp_category ads_bar" "side_bar camp_content camp_content camp_content ads_bar";
   grid-template-columns: 15% 1fr 1fr 1fr 15%;
   grid-gap: 10px; }
 
@@ -166,7 +166,7 @@ nav {
   color: white;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 50px; }
+  margin-top: 120px; }
 
 .hiking_cat_content {
   display: grid;
@@ -183,6 +183,8 @@ nav {
   font-size: 1.25em;
   font-family: 'Poppins', sans-serif;
   margin-top: 25px; }
+  #cat_text1 a:link {
+    text-decoration: none; }
 
 #hiking_img1 {
   grid-area: hiking_img1;
@@ -265,7 +267,7 @@ nav {
   color: white;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 50px; }
+  margin-top: 120px; }
 
 .fishing_cat_content {
   display: grid;
@@ -282,6 +284,8 @@ nav {
   font-size: 1.25em;
   font-family: 'Poppins', sans-serif;
   margin-top: 25px; }
+  #cat_text1 a:link {
+    text-decoration: none; }
 
 #fishing_img1 {
   grid-area: fishing_img1;
@@ -364,7 +368,7 @@ nav {
   color: white;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  margin-top: 50px; }
+  margin-top: 120px; }
 
 .rock_cat_content {
   display: grid;
@@ -381,6 +385,8 @@ nav {
   font-size: 1.25em;
   font-family: 'Poppins', sans-serif;
   margin-top: 25px; }
+  #cat_text1 a:link {
+    text-decoration: none; }
 
 #rock_img1 {
   grid-area: rock_img1;
@@ -454,6 +460,107 @@ nav {
       font-size: 1.25em; }
 
 #infobox3 {
+  display: none; }
+
+.camp_category {
+  grid-area: camp_category;
+  padding: 5px;
+  background-color: #008aca;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 120px; }
+
+.camp_cat_content {
+  display: grid;
+  grid-area: camp_content;
+  grid-template-areas: 'cat_text1 cat_text1 cat_text1' 'camp_img1 camp_img2 camp_img3' 'info_box4 info_box4 info_box4';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; }
+
+#cat_text1 {
+  grid-area: cat_text1;
+  height: 40px;
+  text-align: center;
+  color: black;
+  font-size: 1.25em;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 25px; }
+  #cat_text1 a:link {
+    text-decoration: none; }
+
+#camp_img1 {
+  grid-area: camp_img1;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
+  height: 300px;
+  line-height: 20px;
+  transition: all ease-out 0.5s;
+  background: url("../images/secretfalls.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #camp_img1:hover {
+    transform: scale(1.08);
+    transition: all ease-out 0.5s; }
+
+#camp_img2 {
+  grid-area: camp_img2;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
+  height: 300px;
+  line-height: 20px;
+  transition: all ease-out 0.5s;
+  height: 280px;
+  background: url("../images/beaverlac.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #camp_img2:hover {
+    transform: scale(1.08);
+    transition: all ease-out 0.5s; }
+
+#camp_img3 {
+  grid-area: camp_img3;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
+  height: 300px;
+  line-height: 20px;
+  transition: all ease-out 0.5s;
+  background: url("../images/wolfkop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #camp_img3:hover {
+    transform: scale(1.08);
+    transition: all ease-out 0.5s; }
+
+.info_box4 {
+  grid-area: info_box4;
+  height: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  font-family: 'Poppins', sans-serif; }
+  .info_box4 h4 {
+    color: #0a7bfc; }
+  .info_box4 #secretfalls {
+    margin-top: 10px;
+    display: none; }
+    .info_box4 #secretfalls h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+  .info_box4 #beaverlac {
+    margin-top: 10px;
+    display: none; }
+    .info_box4 #beaverlac h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+  .info_box4 #wolfkop {
+    margin-top: 10px;
+    display: none; }
+    .info_box4 #wolfkop h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+
+#infobox4 {
   display: none; }
 
 /*# sourceMappingURL=style.css.map */

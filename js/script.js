@@ -293,3 +293,95 @@ function showPaarlInfo() {
           });
     }
 }
+
+// ##################################### CAMPING CATEGORY #####################################
+
+function showSecretInfo() {
+    let boxInfo = document.getElementById("infobox4");
+    let info1Show = document.getElementById("secretfalls");
+    let info2Show = document.getElementById("beaverlac");
+    let info3Show = document.getElementById("wolfkop");
+
+    if (info2Show.style.display === "block"){
+        info2Show.style.display = "none";
+    }
+
+    if (info3Show.style.display === "block"){
+        info3Show.style.display = "none";
+    }
+
+    if (boxInfo.style.display === "block" && info1Show.style.display === 'block'){
+        boxInfo.style.display = "none";
+        info1Show.style.display = "none";
+    }
+
+    else {
+        boxInfo.style.display = "block";
+        info1Show.style.display = "block";
+        // window.scrollTo({ 
+        //     top: 2457.0750122070312,
+        //     left: 0, 
+        //     behavior: 'smooth' 
+        //   });
+    }
+}
+
+function showBeaverlacInfo() {
+    let boxInfo = document.getElementById("infobox4");
+    let info1Show = document.getElementById("secretfalls");
+    let info2Show = document.getElementById("beaverlac");
+    let info3Show = document.getElementById("wolfkop");
+
+    if (info1Show.style.display === "block"){
+        info1Show.style.display = "none";
+    }
+
+    if (info3Show.style.display === "block"){
+        info3Show.style.display = "none";
+    }
+
+    if (boxInfo.style.display === "block" && info2Show.style.display === 'block'){
+        boxInfo.style.display = "none";
+        info2Show.style.display = "none";
+    }
+
+    else {
+        boxInfo.style.display = "block";
+        info2Show.style.display = "block";
+        // window.scrollTo({ 
+        //     top: 2457.0750122070312,
+        //     left: 0, 
+        //     behavior: 'smooth' 
+        //   });
+    }
+}
+
+function showWolfInfo() {
+    let boxInfo = document.getElementById("infobox4");
+    let info1Show = document.getElementById("secretfalls");
+    let info2Show = document.getElementById("beaverlac");
+    let info3Show = document.getElementById("wolfkop");
+
+    if (info1Show.style.display === "block"){
+        info1Show.style.display = "none";
+    }
+
+    if (info2Show.style.display === "block"){
+        info2Show.style.display = "none";
+    }
+
+    if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
+        boxInfo.style.display = "none";
+        info3Show.style.display = "none";
+    }
+
+    else {
+        boxInfo.style.display = "block";
+        info3Show.style.display = "block";
+        // window.scrollTo({ 
+        //     top: 2457.0750122070312,
+        //     left: 0, 
+        //     behavior: 'smooth' 
+        //   });
+    }
+}
