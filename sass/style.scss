@@ -86,7 +86,7 @@ $categoryColor: rgb(0, 138, 202);
     margin-top: 50px;
 }
 
-// ############################################### CSS STYLING #####################################################3
+// ############################################### CSS STYLING #####################################################
 
 // This is the main grid container
 .grid-container{
@@ -179,7 +179,7 @@ nav{
     }
 }
 
-// This is the main body content
+// MAIN BODY GRID CONTENT
 .body_content{
     grid-area: body_content;
     display: grid;
@@ -188,6 +188,8 @@ nav{
     'side_bar hiking_content hiking_content hiking_content ads_bar'
     'side_bar fishing_category fishing_category fishing_category ads_bar'
     'side_bar fishing_content fishing_content fishing_content ads_bar'
+    'side_bar rock_category rock_category rock_category ads_bar'
+    'side_bar rock_content rock_content rock_content ads_bar'
     ;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
     grid-gap: 10px;
@@ -362,15 +364,15 @@ nav{
 .fishing_cat_content{
     display: grid;
     grid-area: fishing_content;
-    grid-template-areas: 'cat_text2 cat_text2 cat_text2'
+    grid-template-areas: 'cat_text1 cat_text1 cat_text1'
     'fishing_img1 fishing_img2 fishing_img3'
     'info_box2 info_box2 info_box2';
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
 
-#cat_text2{
-    grid-area: cat_text2;
+#cat_text1{
+    grid-area: cat_text1;
     @include category_text;
 }
 
@@ -424,5 +426,82 @@ nav{
     }
 }
 #infobox2{
+    display: none;
+}
+
+// ################################### ROCK CLIMBING CATEGORY ###################################
+
+.rock_category{
+    grid-area: rock_category;
+    @include categoryHeader;
+}
+
+.rock_cat_content{
+    display: grid;
+    grid-area: rock_content;
+    grid-template-areas: 'cat_text1 cat_text1 cat_text1'
+    'rock_img1 rock_img2 rock_img3'
+    'info_box3 info_box3 info_box3'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#cat_text1{
+    grid-area: cat_text1;
+    @include category_text;
+}
+
+// This is the hiking category images
+#rock_img1{
+    grid-area: rock_img1;
+    @include category_img;
+    background: url('../images/rocklands.jpg');
+    @include backgroundImgSettings();
+}
+
+#rock_img2{
+    grid-area: rock_img2;
+    @include category_img;
+    height: 280px;
+    background: url('../images/tablemountain.jpg');
+    @include backgroundImgSettings();
+}
+#rock_img3{
+    grid-area: rock_img3;
+    @include category_img;
+    background: url('../images/paarl.jpg');
+    @include backgroundImgSettings();
+}
+
+.info_box3{
+    grid-area: info_box3;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+
+    h4{
+        color: rgb(10, 123, 252);
+    }
+
+    #rocklands{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #tablemountain{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #paarl{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+}
+#infobox3{
     display: none;
 }
