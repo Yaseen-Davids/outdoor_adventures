@@ -247,5 +247,16 @@
 
     </div>
 
+    <button>Return the top and left position of the p element</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x = $("#rocklands").position();
+                alert("Top position: " + x.top + " Left position: " + x.left);
+            });
+        });
+    </script>
+
 </body>
 </html>

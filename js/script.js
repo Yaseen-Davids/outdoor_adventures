@@ -22,11 +22,7 @@
 // ##################################### HIKING CATEGORY #####################################
 
 function showLionInfo() {
-    window.scrollBy({ 
-        top: 100,
-        left: 0, 
-        behavior: 'smooth' 
-      });
+    // window.scrollTo(0, 1371.4249877929688);
     let boxInfo = document.getElementById("infobox");
     let info1Show = document.getElementById("lionshead");
     let info2Show = document.getElementById("skeleton");
@@ -48,6 +44,11 @@ function showLionInfo() {
     else {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
+        window.scrollTo({ 
+            top: 1371.4249877929688,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -72,6 +73,11 @@ function showSkeletonInfo() {
         else {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
+        window.scrollTo({ 
+            top: 1371.4249877929688,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -96,6 +102,11 @@ function showMotteInfo() {
         else {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
+        window.scrollTo({ 
+            top: 1371.4249877929688,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -123,6 +134,11 @@ function showKommetjieInfo() {
     else {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
+        window.scrollTo({ 
+            top: 1924.25,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -148,6 +164,11 @@ function showRooiInfo() {
     else {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
+        window.scrollTo({ 
+            top: 1924.25,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -173,6 +194,11 @@ function showCapeInfo() {
     else {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
+        window.scrollTo({ 
+            top: 1924.25,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -200,6 +226,11 @@ function showRocklandsInfo() {
     else {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
+        window.scrollTo({ 
+            top: 2457.0750122070312,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -225,6 +256,11 @@ function showTablemountInfo() {
     else {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
+        window.scrollTo({ 
+            top: 2457.0750122070312,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -250,5 +286,10 @@ function showPaarlInfo() {
     else {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
+        window.scrollTo({ 
+            top: 2457.0750122070312,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
