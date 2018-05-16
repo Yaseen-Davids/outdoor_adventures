@@ -19,6 +19,8 @@
 //     }, 1700);
 // }
 
+// ##################################### HIKING CATEGORY #####################################
+
 function showLionInfo() {
     let boxInfo = document.getElementById("infobox");
     let info1Show = document.getElementById("lionshead");
@@ -82,6 +84,78 @@ function showMotteInfo() {
         info2Show.style.display = "none";
     }
 
+    if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
+        boxInfo.style.display = "none";
+        info3Show.style.display = "none";
+    } 
+        else {
+        boxInfo.style.display = "block";
+        info3Show.style.display = "block";
+    }
+}
+
+// ##################################### FISHING CATEGORY #####################################
+
+function showKommetjieInfo() {
+    let boxInfo = document.getElementById("infobox2");
+    let info1Show = document.getElementById("kommetjie");
+    let info2Show = document.getElementById("rooikrans");
+    let info3Show = document.getElementById("capepen");
+
+    if (info2Show.style.display === "block"){
+        info2Show.style.display = "none";
+    }
+
+    if (info3Show.style.display === "block"){
+        info3Show.style.display = "none";
+    }
+
+    if (boxInfo.style.display === "block" && info1Show.style.display === 'block'){
+        boxInfo.style.display = "none";
+        info1Show.style.display = "none";
+    }
+
+    else {
+        boxInfo.style.display = "block";
+        info1Show.style.display = "block";
+    }
+}
+
+function showRooiInfo() {
+    let boxInfo = document.getElementById("infobox2");
+    let info1Show = document.getElementById("kommetjie");
+    let info2Show = document.getElementById("rooikrans");
+    let info3Show = document.getElementById("capepen");
+
+    if (info1Show.style.display === "block"){
+        info1Show.style.display = "none";
+    }
+
+    if (info3Show.style.display === "block"){
+        info3Show.style.display = "none";
+    }
+
+    if (boxInfo.style.display === "block" && info2Show.style.display === 'block'){
+        boxInfo.style.display = "none";
+        info2Show.style.display = "none";
+    }
+
+    else {
+        boxInfo.style.display = "block";
+        info2Show.style.display = "block";
+    }
+}
+
+function showCapeInfo() {
+    let boxInfo = document.getElementById("infobox2");
+    let info1Show = document.getElementById("kommetjie");
+    let info2Show = document.getElementById("rooikrans");
+    let info3Show = document.getElementById("capepen");
+
+    if (info1Show.style.display === "block"){
+        info1Show.style.display = "none";
+    }
+
     if (info2Show.style.display === "block"){
         info2Show.style.display = "none";
     }
@@ -89,8 +163,9 @@ function showMotteInfo() {
     if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info3Show.style.display = "none";
-    } 
-        else {
+    }
+
+    else {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
     }

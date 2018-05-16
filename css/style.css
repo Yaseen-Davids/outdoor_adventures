@@ -62,7 +62,7 @@ nav {
 .body_content {
   grid-area: body_content;
   display: grid;
-  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar cat_text1 cat_text1 cat_text1 ads_bar" "side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar" "side_bar info_box1 info_box1 info_box1 ads_bar" "side_bar fishing_category fishing_category fishing_category ads_bar" "side_bar cat_text2 cat_text2 cat_text2 ads_bar" "side_bar fishing_img1 fishing_img2 fishing_img3 ads_bar";
+  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar hiking_content hiking_content hiking_content ads_bar" "side_bar fishing_category fishing_category fishing_category ads_bar" "side_bar fishing_content fishing_content fishing_content ads_bar";
   grid-template-columns: 15% 1fr 1fr 1fr 15%;
   grid-gap: 10px; }
 
@@ -168,23 +168,12 @@ nav {
   font-family: 'Raleway', sans-serif;
   margin-top: 50px; }
 
-#cat_text1 {
-  grid-area: cat_text1;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
-
-#cat_text1 {
-  grid-area: cat_text1;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
+.hiking_cat_content {
+  display: grid;
+  grid-area: hiking_content;
+  grid-template-areas: 'cat_text1 cat_text1 cat_text1' 'hiking_img1 hiking_img2 hiking_img3' 'info_box1 info_box1 info_box1';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; }
 
 #cat_text1 {
   grid-area: cat_text1;
@@ -197,40 +186,43 @@ nav {
 
 #hiking_img1 {
   grid-area: hiking_img1;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
   height: 300px;
   line-height: 20px;
+  transition: all ease-out 0.5s;
   background: url("../images/lionshead.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  transition: all ease-out 0.5s; }
+  background-repeat: no-repeat; }
   #hiking_img1:hover {
     transform: scale(1.08);
     transition: all ease-out 0.5s; }
 
 #hiking_img2 {
   grid-area: hiking_img2;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
   height: 300px;
   line-height: 20px;
+  transition: all ease-out 0.5s;
   height: 280px;
   background: url("../images/skeleton.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  transition: all ease-out 0.5s; }
+  background-repeat: no-repeat; }
   #hiking_img2:hover {
     transform: scale(1.08);
     transition: all ease-out 0.5s; }
 
 #hiking_img3 {
   grid-area: hiking_img3;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
   height: 300px;
   line-height: 20px;
+  transition: all ease-out 0.5s;
   background: url("../images/motte.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  transition: all ease-out 0.5s; }
+  background-repeat: no-repeat; }
   #hiking_img3:hover {
     transform: scale(1.08);
     transition: all ease-out 0.5s; }
@@ -275,23 +267,12 @@ nav {
   font-family: 'Raleway', sans-serif;
   margin-top: 50px; }
 
-#cat_text2 {
-  grid-area: cat_text2;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
-
-#cat_text2 {
-  grid-area: cat_text2;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
+.fishing_cat_content {
+  display: grid;
+  grid-area: fishing_content;
+  grid-template-areas: 'cat_text2 cat_text2 cat_text2' 'fishing_img1 fishing_img2 fishing_img3' 'info_box2 info_box2 info_box2';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; }
 
 #cat_text2 {
   grid-area: cat_text2;
@@ -304,30 +285,76 @@ nav {
 
 #fishing_img1 {
   grid-area: fishing_img1;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
   height: 300px;
   line-height: 20px;
-  background: url("../images/lionshead.jpg");
+  transition: all ease-out 0.5s;
+  background: url("../images/kommetjie.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  #fishing_img1:hover {
+    transform: scale(1.08);
+    transition: all ease-out 0.5s; }
 
 #fishing_img2 {
   grid-area: fishing_img2;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
   height: 300px;
   line-height: 20px;
+  transition: all ease-out 0.5s;
   height: 320px;
-  background: url("../images/skeleton.jpg");
+  background: url("../images/rooikrans.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  #fishing_img2:hover {
+    transform: scale(1.08);
+    transition: all ease-out 0.5s; }
 
 #fishing_img3 {
   grid-area: fishing_img3;
+  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
   height: 300px;
   line-height: 20px;
-  background: url("../images/motte.jpg");
+  transition: all ease-out 0.5s;
+  background: url("../images/capepeninsula.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  #fishing_img3:hover {
+    transform: scale(1.08);
+    transition: all ease-out 0.5s; }
+
+.info_box2 {
+  grid-area: info_box2;
+  height: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+  font-family: 'Poppins', sans-serif; }
+  .info_box2 h4 {
+    color: #0a7bfc; }
+  .info_box2 #kommetjie {
+    margin-top: 10px;
+    display: none; }
+    .info_box2 #kommetjie h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+  .info_box2 #rooikrans {
+    margin-top: 10px;
+    display: none; }
+    .info_box2 #rooikrans h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+  .info_box2 #capepen {
+    margin-top: 10px;
+    display: none; }
+    .info_box2 #capepen h4 {
+      text-decoration: underline;
+      font-size: 1.25em; }
+
+#infobox2 {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

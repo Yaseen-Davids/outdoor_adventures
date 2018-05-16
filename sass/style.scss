@@ -50,8 +50,14 @@ $categoryColor: rgb(0, 138, 202);
 }
 // This is the code for the category images
 @mixin category_img{
+    box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
     height: 300px;
     line-height: 20px;
+    transition: all ease-out 0.5s;
+    &:hover{
+        transform: scale(1.08);
+        transition: all ease-out 0.5s;
+    }
     // border: $borderSettings;
 }
 // This is for the category text
@@ -179,12 +185,9 @@ nav{
     display: grid;
     grid-template-areas: 'side_bar category_section category_section category_section ads_bar'
     'side_bar hiking_category hiking_category hiking_category ads_bar'
-    'side_bar cat_text1 cat_text1 cat_text1 ads_bar'
-    'side_bar hiking_img1 hiking_img2 hiking_img3 ads_bar'
-    'side_bar info_box1 info_box1 info_box1 ads_bar'
+    'side_bar hiking_content hiking_content hiking_content ads_bar'
     'side_bar fishing_category fishing_category fishing_category ads_bar'
-    'side_bar cat_text2 cat_text2 cat_text2 ads_bar'
-    'side_bar fishing_img1 fishing_img2 fishing_img3 ads_bar'
+    'side_bar fishing_content fishing_content fishing_content ads_bar'
     ;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
     grid-gap: 10px;
@@ -278,15 +281,17 @@ nav{
     @include categoryHeader;
 }
 
+.hiking_cat_content{
+    display: grid;
+    grid-area: hiking_content;
+    grid-template-areas: 'cat_text1 cat_text1 cat_text1'
+    'hiking_img1 hiking_img2 hiking_img3'
+    'info_box1 info_box1 info_box1';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
 // This is the hiking category names
-#cat_text1{
-    grid-area: cat_text1;
-    @include category_text;
-}
-#cat_text1{
-    grid-area: cat_text1;
-    @include category_text;
-}
 #cat_text1{
     grid-area: cat_text1;
     @include category_text;
@@ -298,11 +303,6 @@ nav{
     @include category_img;
     background: url('../images/lionshead.jpg');
     @include backgroundImgSettings();
-    transition: all ease-out 0.5s;
-    &:hover{
-        transform: scale(1.08);
-        transition: all ease-out 0.5s;
-    }
 }
 
 #hiking_img2{
@@ -311,22 +311,12 @@ nav{
     height: 280px;
     background: url('../images/skeleton.jpg');
     @include backgroundImgSettings();
-    transition: all ease-out 0.5s;
-    &:hover{
-        transform: scale(1.08);
-        transition: all ease-out 0.5s;
-    }
 }
 #hiking_img3{
     grid-area: hiking_img3;
     @include category_img;
     background: url('../images/motte.jpg');
     @include backgroundImgSettings();
-    transition: all ease-out 0.5s;
-    &:hover{
-        transform: scale(1.08);
-        transition: all ease-out 0.5s;
-    }
 }
 
 // This is the information section of the hiking category
@@ -369,14 +359,16 @@ nav{
     @include categoryHeader;
 }
 
-#cat_text2{
-    grid-area: cat_text2;
-    @include category_text;
+.fishing_cat_content{
+    display: grid;
+    grid-area: fishing_content;
+    grid-template-areas: 'cat_text2 cat_text2 cat_text2'
+    'fishing_img1 fishing_img2 fishing_img3'
+    'info_box2 info_box2 info_box2';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
-#cat_text2{
-    grid-area: cat_text2;
-    @include category_text;
-}
+
 #cat_text2{
     grid-area: cat_text2;
     @include category_text;
@@ -386,19 +378,51 @@ nav{
 #fishing_img1{
     grid-area: fishing_img1;
     @include category_img;
-    background: url('../images/lionshead.jpg');
+    background: url('../images/kommetjie.jpg');
     @include backgroundImgSettings();
 }
 #fishing_img2{
     grid-area: fishing_img2;
     @include category_img;
     height: 320px;
-    background: url('../images/skeleton.jpg');
+    background: url('../images/rooikrans.jpg');
     @include backgroundImgSettings();
 }
 #fishing_img3{
     grid-area: fishing_img3;
     @include category_img;
-    background: url('../images/motte.jpg');
+    background: url('../images/capepeninsula.jpg');
     @include backgroundImgSettings();
+}
+
+.info_box2{
+    grid-area: info_box2;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+
+    h4{
+        color: rgb(10, 123, 252);
+    }
+
+    #kommetjie{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #rooikrans{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+    #capepen{
+        margin-top: 10px;
+        display: none;
+        @include paraHeader;
+    }
+}
+#infobox2{
+    display: none;
 }
