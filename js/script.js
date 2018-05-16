@@ -22,6 +22,11 @@
 // ##################################### HIKING CATEGORY #####################################
 
 function showLionInfo() {
+    window.scrollBy({ 
+        top: 100,
+        left: 0, 
+        behavior: 'smooth' 
+      });
     let boxInfo = document.getElementById("infobox");
     let info1Show = document.getElementById("lionshead");
     let info2Show = document.getElementById("skeleton");
