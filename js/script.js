@@ -434,3 +434,19 @@ function goToCamp() {
         behavior: 'smooth'
     });
 }
+
+// window.onload = function positionCheck() {
+//     // let hikepos = document.getElementById("goToHike").offsetTop;
+//     // let sidepos = document.getElementById("sideBar").offsetTop;
+//     let hikeText = document.getElementById("nav_links");
+//     // let currentScrollPos = document.documentElement.scrollTop;
+
+//     if (window.scrollY > 1000){
+//         hikeText.style.backgroundColor = "red";
+//         positionCheck();
+//     }
+//     else if (window.scrollY < 1000){
+//         hikeText.style.backgroundColor = "white";
+//         positionCheck();
+//     }
+// }
