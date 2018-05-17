@@ -58,6 +58,21 @@ nav {
       nav #nav_links a:hover {
         color: black;
         border-bottom-color: black; }
+  nav .dropdown_item {
+    font-size: 0.8em; }
+  nav #categoryMenu {
+    display: none;
+    height: 0px; }
+    nav #categoryMenu ul {
+      list-style: none; }
+      nav #categoryMenu ul a {
+        border-bottom: 1px solid transparent;
+        transition: all ease-in-out 0.4s; }
+        nav #categoryMenu ul a:hover {
+          color: black;
+          border-bottom-color: black; }
+      nav #categoryMenu ul li {
+        font-size: 0.9em; }
 
 .body_content {
   grid-area: body_content;
@@ -68,11 +83,26 @@ nav {
 
 .side_bar {
   grid-area: side_bar;
-  border: 1px solid black; }
+  font-family: 'Raleway', sans-serif; }
   .side_bar .side_bar_info {
-    border: 1px solid black;
-    height: 200px;
-    position: fixed; }
+    height: 300px;
+    position: sticky;
+    top: 150px;
+    box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.747);
+    margin-top: 14px; }
+    .side_bar .side_bar_info h3 {
+      margin-left: 14px;
+      font-size: 1.5em; }
+    .side_bar .side_bar_info ul {
+      list-style: none;
+      line-height: 50px;
+      margin-left: -40px;
+      font-size: 1.25em; }
+      .side_bar .side_bar_info ul a {
+        color: black;
+        text-decoration: none; }
+        .side_bar .side_bar_info ul a li:hover {
+          color: red; }
 
 .category_section {
   grid-area: category_section;

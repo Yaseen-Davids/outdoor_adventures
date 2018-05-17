@@ -1,5 +1,6 @@
 // THIS IS THE CSS STYLESHEET
 
+// THIS IS  THE IMPORTED PARTIALS
 @import 'variables';
 @import 'mixins';
 
@@ -27,7 +28,6 @@ body{
     height: 900px;
     background: url('../images/home.jpg');
     @include backgroundImgSettings;
-    // margin-top: -30px;
 
     // This the header logo
     .header_logo{
@@ -76,7 +76,6 @@ nav{
     // This is the navbar links
     #nav_links{
         text-align: center;
-        // font-family: 'Poppins', sans-serif;
         font-family: 'Permanent Marker', cursive;
         padding: 15px;
 
@@ -93,6 +92,29 @@ nav{
             &:hover{
                 color: $navbarHoverColor;
                 border-bottom-color: $navbarHoverColor;
+            }
+        }
+    }
+
+    .dropdown_item{
+        font-size: 0.8em;
+    }
+
+    #categoryMenu{
+        display: none;
+        height: 0px;
+        ul{
+            list-style: none;
+            a{
+                border-bottom: 1px solid transparent;
+                transition: all ease-in-out 0.4s;
+                &:hover{
+                    color: $navbarHoverColor;
+                    border-bottom-color: $navbarHoverColor;
+                }
+            }
+            li{
+                font-size: 0.9em;
             }
         }
     }
@@ -119,12 +141,37 @@ nav{
 // This is the side bar
 .side_bar{
     grid-area: side_bar;
-    border: $borderSettings;
+    font-family: 'Raleway', sans-serif;
 
     .side_bar_info{
-        border: $borderSettings;
-        height: 200px;
-        position: fixed;
+        height: 300px;
+        position: sticky;
+        top: 150px;
+        box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.747);
+        margin-top: 14px;
+
+        h3{
+            margin-left: 14px;
+            font-size: 1.5em;
+        }
+
+        ul{
+            list-style: none;
+            line-height: 50px;
+            margin-left: -40px;
+            font-size: 1.25em;
+
+            a{
+                color: black;
+                text-decoration: none;
+
+                li{
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
     }
 }
 

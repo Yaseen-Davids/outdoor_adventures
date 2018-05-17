@@ -35,12 +35,18 @@
                 <!-- This is the navbar links -->
                 <div id="nav_links">
                     <a href="#">Home</a>
-                    <a href="#categories" onclick="smoothScroll()">Categories</a>
-                    <!-- onclick="smoothScroll()" -->
+                    <a href="#cat" id="cat_cont" class="changesize" onclick="showCatMenu()">Categories <span class="dropdown_item">&#9660;</span></a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">Contact Us</a>
+                    <div id="categoryMenu" class="changesize">
+                        <ul>
+                            <a href="#goToHike" onclick="smoothScroll()"><li>Hiking</li></a>
+                            <a href="#goToFish"><li>Fishing</li></a>
+                            <a href="#goToRock"><li>Rock Climbing</li></a>
+                            <a href="#goToCamp"><li>Camping</li></a>
+                        </ul>
+                    </div>
                 </div>
-            
             </nav>
 
             <!-- This is the main body contents -->
@@ -48,7 +54,15 @@
                 
                 <!-- This is the side bar -->
                 <div class="side_bar">
-                    <div class="side_bar_info"></div>
+                    <div class="side_bar_info">
+                        <h3>Categories</h3>
+                        <ul>
+                            <a href="#goToHike"><li id="hiking_pos">&nbsp;&nbsp;&nbsp;Hiking</li></a>
+                            <a href="#goToFish"><li id="fishing_pos">&nbsp;&nbsp;&nbsp;Fishing</li></a>
+                            <a href="#goToRock"><li id="rock_pos">&nbsp;&nbsp;&nbsp;Rock Climbing</li></a>
+                            <a href="#goToCamp"><li id="camping_pos">&nbsp;&nbsp;&nbsp;Camping</li></a>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- This is the category section -->
@@ -77,7 +91,7 @@
                 </div>
 
                 <!-- ##################################### THIS IS THE HIKING CATEGORY ##################################### -->
-                <div class="hiking_category" id="categories">
+                <div class="hiking_category" id="goToHike">
                     <h2>Hiking :</h2>
                 </div>
 
@@ -131,7 +145,7 @@
                 </div>
 
                 <!-- ##################################### THIS IS THE FISHING CATEGORY ##################################### -->
-                <div class="fishing_category">
+                <div class="fishing_category" id="goToFish">
                     <h2>Fishing :</h2>
                 </div>
                 
@@ -189,7 +203,7 @@
 
                 <!-- ##################################### THIS IS THE ROCK CLIMBING CATEGORY ##################################### -->
 
-                <div class="rock_category" id="categories">
+                <div class="rock_category" id="goToRock">
                     <h2>Rock Climbing :</h2>
                 </div>
     
@@ -245,7 +259,7 @@
 
                 <!-- ##################################### THIS IS THE CAMPING CATEGORY ##################################### -->
 
-                <div class="camp_category">
+                <div class="camp_category" id="goToCamp">
                     <h2>Camping :</h2>
                 </div>
         

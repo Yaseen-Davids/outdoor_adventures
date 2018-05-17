@@ -13,11 +13,11 @@
 //     }
 // }
 
-// function smoothScroll() {
-//     $('html, body').animate({
-//         scrollTop: $($(this).attr('href')).offset().top
-//     }, 1700);
-// }
+function smoothScroll() {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 1700);
+}
 
 // ##################################### HIKING CATEGORY #####################################
 
@@ -383,5 +383,17 @@ function showWolfInfo() {
         //     left: 0, 
         //     behavior: 'smooth' 
         //   });
+    }
+}
+
+function showCatMenu() {
+    let showMenu = document.getElementById("categoryMenu");
+
+    if (showMenu.style.display === "block"){
+        showMenu.style.display = "none";
+    }
+    else{
+        showMenu.style.display = "block";
+        showMenu.style.height = "250px";
     }
 }
