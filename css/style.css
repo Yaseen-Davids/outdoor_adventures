@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-areas: "home-img home-img home-img" "navbar navbar navbar" "body_content body_content body_content" "quote_section quote_section quote_section";
+  grid-template-areas: "home-img home-img home-img" "navbar navbar navbar" "body_content body_content body_content" "quote_section quote_section quote_section" "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr; }
 
 body {
@@ -68,11 +68,15 @@ nav {
 
 .side_bar {
   grid-area: side_bar;
-  border: 1px solid transparent; }
+  border: 1px solid black; }
+  .side_bar .side_bar_info {
+    border: 1px solid black;
+    height: 200px;
+    position: fixed; }
 
 .category_section {
   grid-area: category_section;
-  border: 1px solid transparent;
+  border: 1px solid black;
   line-height: 50px;
   height: 300px;
   padding: 10px; }
@@ -157,7 +161,7 @@ nav {
 
 .ads_bar {
   grid-area: ads_bar;
-  border: 1px solid transparent; }
+  border: 1px solid black; }
 
 .hiking_category {
   grid-area: hiking_category;
@@ -587,5 +591,13 @@ nav {
     font-family: 'Varela', sans-serif; }
     .quote_section button:hover {
       background-color: black; }
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
