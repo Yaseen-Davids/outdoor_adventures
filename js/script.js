@@ -13,11 +13,11 @@
 //     }
 // }
 
-function smoothScroll() {
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-    }, 1700);
-}
+// function smoothScroll() {
+//     $('html, body').animate({
+//         scrollTop: $($(this).attr('href')).offset().top
+//     }, 1700);
+// }
 
 // ##################################### HIKING CATEGORY #####################################
 
@@ -379,7 +379,7 @@ function showWolfInfo() {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
         // window.scrollTo({ 
-        //     top: 2457.0750122070312,
+        //     top: ypos - 100,
         //     left: 0, 
         //     behavior: 'smooth' 
         //   });
@@ -396,4 +396,41 @@ function showCatMenu() {
         showMenu.style.display = "block";
         showMenu.style.height = "250px";
     }
+}
+
+// ########################## COPYRIGHT SMOOTH SCROLL ##########################
+function goToHike() {
+    let ypos = document.getElementById("goToHike").offsetTop;
+    window.scrollTo({ 
+        top: ypos - 100,
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
+function goToFish() {
+    let ypos = document.getElementById("goToFish").offsetTop;
+    window.scrollTo({ 
+        top: ypos - 100,
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
+function goToRock() {
+    let ypos = document.getElementById("goToRock").offsetTop;
+    window.scrollTo({ 
+        top: ypos - 100,
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
+function goToCamp() {
+    let ypos = document.getElementById("goToCamp").offsetTop;
+    window.scrollTo({ 
+        top: ypos - 100,
+        left: 0, 
+        behavior: 'smooth'
+    });
 }
