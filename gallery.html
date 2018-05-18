@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outdoor Adventures - Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css"/>
+    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Permanent+Marker|Raleway|Varela" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- This is the main container -->
+    <div id="container">
+
+        <!-- This is the grid container -->
+        <div class="gallery_grid-container">
+
+            <div id="gallery_img">
+                <!-- This is the navigation bar -->
+                <nav id="navbar">
+                    <!-- This is the navbar links -->
+                    <div id="nav_links">
+                        <a href="index.html">Home</a>
+                        <a href="#cat" id="cat_cont" class="changesize" onclick="showCatMenu()">Categories <span class="dropdown_item">&#9660;</span></a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact Us</a>
+                        <div id="categoryMenu" class="changesize" onclick="hideCatMenu()">
+                            <ul>
+                                <a href="#go" onclick="goToHike()"><li>Hiking</li></a>
+                                <a href="#go" onclick="goToFish()"><li>Fishing</li></a>
+                                <a href="#go" onclick="goToRock()"><li>Rock Climbing</li></a>
+                                <a href="#go" onclick="goToCamp()"><li>Camping</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="gallery_text_header">
+                <h2>Check out our Gallery Page</h2>
+            </div>
+
+            <!-- This is the side bar -->
+            <div class="side_bar" id="sideBar">
+                    <div class="side_bar_info">
+                    <h3>Categories</h3>
+                    <ul>
+                        <a href="#go" onclick="goToHike()"><li id="hiking_pos">&nbsp;&nbsp;&nbsp;Hiking</li></a>
+                        <a href="#go" onclick="goToFish()"><li id="fishing_pos">&nbsp;&nbsp;&nbsp;Fishing</li></a>
+                        <a href="#go" onclick="goToRock()"><li id="rock_pos">&nbsp;&nbsp;&nbsp;Rock Climbing</li></a>
+                        <a href="#go" onclick="goToCamp()"><li id="camping_pos">&nbsp;&nbsp;&nbsp;Camping</li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gall-content">
+                <div class="hike_cat" id="goToHike">
+                    <h2>Hiking</h2>
+                </div>
+                <div class="hike_img1"></div>
+                <div class="hike_img2"></div>
+                <div class="hike_img3"></div>
+                <div class="hike_img4"></div>
+                <div class="hike_img5"></div>
+                <div class="hike_img6"></div>
+
+                <div class="fish_cat" id="goToFish">
+                    <h2>Fishing</h2>
+                </div>
+                <div class="fish_img1"></div>
+                <div class="fish_img2"></div>
+                <div class="fish_img3"></div>
+                <div class="fish_img4"></div>
+                <div class="fish_img5"></div>
+                <div class="fish_img6"></div>
+
+                <div class="rock_cat" id="goToRock">
+                    <h2>Rock Climbing</h2>
+                </div>
+                <div class="rock_img1"></div>
+                <div class="rock_img2"></div>
+                <div class="rock_img3"></div>
+                <div class="rock_img4"></div>
+                <div class="rock_img5"></div>
+                <div class="rock_img6"></div>
+
+                <div class="camp_cat" id="goToCamp">
+                    <h2>Camping</h2>
+                </div>
+                <div class="camp_img1"></div>
+                <div class="camp_img2"></div>
+                <div class="camp_img3"></div>
+                <div class="camp_img4"></div>
+                <div class="camp_img5"></div>
+                <div class="camp_img6"></div>
+
+            </div>
+                
+        </div>
+
+    </div>
+
+</body>
+</html>

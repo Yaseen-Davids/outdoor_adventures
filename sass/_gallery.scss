@@ -1,0 +1,207 @@
+// ############################# THIS IS THE GALLERY PAGE CSS #############################
+
+.gallery_grid-container{
+    display: grid;
+    grid-template-areas: 'gallery_img gallery_img gallery_img'
+    'navbar navbar navbar'
+    'gallery-head gallery-head gallery-head'
+    'side_bar gall-content gall-content'
+    ;
+    grid-template-columns: 15% 1fr 1fr;
+    font-family: 'Raleway', sans-serif;
+}
+
+#gallery_img{
+    grid-area: gallery_img;
+    background: url('../images/gallery_header.jpg');
+    @include backgroundImgSettings;
+    height: 60vh;
+}
+
+.gallery_text_header{
+    grid-area: gallery-head;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.25em;
+    opacity: 0.89;
+}
+
+.gall-content{
+    grid-area: gall-content;
+    border: $borderSettings;
+    display: grid;
+    grid-template-areas: 'hike_cat hike_cat hike_cat'
+    'hike_img1 hike_img2 hike_img3'
+    'hike_img4 hike_img5 hike_img6'
+    'fish_cat fish_cat fish_cat'
+    'fish_img1 fish_img2 fish_img3'
+    'fish_img4 fish_img5 fish_img6'
+    'rock_cat rock_cat rock_cat'
+    'rock_img1 rock_img2 rock_img3'
+    'rock_img4 rock_img5 rock_img6'
+    'camp_cat camp_cat camp_cat'
+    'camp_img1 camp_img2 camp_img3'
+    'camp_img4 camp_img5 camp_img6'
+    'footer footer footer'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+// ############# HIKING CATEGORY AND IMAGES #############
+
+.hike_cat{
+    border: $borderSettings;
+    grid-area: hike_cat;
+    @include galCatHead;
+}
+
+.hike_img1{
+    grid-area: hike_img1;
+    border: $borderSettings;
+    height: 250px;
+    box-shadow: 3px 3px 10px black;
+}
+.hike_img2{
+    grid-area: hike_img2;
+    border: $borderSettings;
+    height: 220px;
+}
+.hike_img3{
+    grid-area: hike_img3;
+    border: $borderSettings;
+    height: 250px;
+}
+.hike_img4{
+    grid-area: hike_img4;
+    border: $borderSettings;
+    height: 220px;
+}
+.hike_img5{
+    grid-area: hike_img5;
+    border: $borderSettings;
+    height: 250px;
+}
+.hike_img6{
+    grid-area: hike_img6;
+    border: $borderSettings;
+    height: 220px;
+}
+
+// ############# FISHING CATEGORY AND IMAGES #############
+
+.fish_cat{
+    border: $borderSettings;
+    grid-area: fish_cat;
+    @include galCatHead;
+}
+
+.fish_img1{
+    grid-area: fish_img1;
+    border: $borderSettings;
+    height: 250px;
+}
+.fish_img2{
+    grid-area: fish_img2;
+    border: $borderSettings;
+    height: 220px;
+}
+.fish_img3{
+    grid-area: fish_img3;
+    border: $borderSettings;
+    height: 250px;
+}
+.fish_img4{
+    grid-area: fish_img4;
+    border: $borderSettings;
+    height: 220px;
+}
+.fish_img5{
+    grid-area: fish_img5;
+    border: $borderSettings;
+    height: 250px;
+}
+.fish_img6{
+    grid-area: fish_img6;
+    border: $borderSettings;
+    height: 220px;
+}
+
+// ############# ROCK CLIMBING CATEGORY AND IMAGES #############
+
+.rock_cat{
+    border: $borderSettings;
+    grid-area: rock_cat;
+    @include galCatHead;
+}
+
+.rock_img1{
+    grid-area: rock_img1;
+    border: $borderSettings;
+    height: 250px;
+}
+.rock_img2{
+    grid-area: rock_img2;
+    border: $borderSettings;
+    height: 220px;
+}
+.rock_img3{
+    grid-area: rock_img3;
+    border: $borderSettings;
+    height: 250px;
+}
+.rock_img4{
+    grid-area: rock_img4;
+    border: $borderSettings;
+    height: 220px;
+}
+.rock_img5{
+    grid-area: rock_img5;
+    border: $borderSettings;
+    height: 250px;
+}
+.rock_img6{
+    grid-area: rock_img6;
+    border: $borderSettings;
+    height: 220px;
+}
+// ############# CAMPING CATEGORY AND IMAGES #############
+
+.camp_cat{
+    border: $borderSettings;
+    grid-area: camp_cat;
+    @include galCatHead;
+}
+
+.camp_img1{
+    grid-area: camp_img1;
+    border: $borderSettings;
+    height: 250px;
+}
+.camp_img2{
+    grid-area: camp_img2;
+    border: $borderSettings;
+    height: 220px;
+}
+.camp_img3{
+    grid-area: camp_img3;
+    border: $borderSettings;
+    height: 250px;
+}
+.camp_img4{
+    grid-area: camp_img4;
+    border: $borderSettings;
+    height: 220px;
+}
+.camp_img5{
+    grid-area: camp_img5;
+    border: $borderSettings;
+    height: 250px;
+}
+.camp_img6{
+    grid-area: camp_img6;
+    border: $borderSettings;
+    height: 220px;
+}

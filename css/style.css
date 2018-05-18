@@ -1,726 +1,90 @@
-.grid-container {
-  display: grid;
-  grid-template-areas: "home-img home-img home-img" "navbar navbar navbar" "body_content body_content body_content" "quote_section quote_section quote_section" "footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr; }
+/*
+Error: Undefined mixin 'contactBox'.
+        on line 90 of sass/_contact.scss, in `contactBox'
+        from line 90 of sass/_contact.scss
+        from line 589 of sass/style.scss
 
-body {
-  margin: 0; }
+85:             text-decoration: none;
+86:             margin-right: 30px;
+87:             margin-left: 20px;
+88:             font-size: 1.4em;
+89:             border-bottom: 1px solid transparent;
+90:             transition: all ease-in-out 0.4s;
+91: 
+92:             &:hover{
+93:                 color: $navbarHoverColor;
+94:                 border-bottom-color: $navbarHoverColor;
+95:             }
 
-.home-img {
-  grid-area: home-img;
-  height: 900px;
-  background: url("../images/home.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  .home-img .header_logo {
-    margin-top: 200px; }
-    .home-img .header_logo h1 {
-      color: white;
-      font-family: 'Permanent Marker', cursive;
-      font-size: 3em; }
-    .home-img .header_logo .header_line {
-      text-decoration: line-through;
-      text-decoration-color: #20a7f5;
-      text-decoration-style: double;
-      color: transparent; }
-    .home-img .header_logo .Colortext {
-      background-color: rgba(43, 43, 43, 0.92);
-      padding: 20px; }
-    .home-img .header_logo h3 {
-      color: white;
-      background-color: rgba(43, 43, 43, 0.92);
-      padding: 15px;
-      font-family: 'Poppins', sans-serif;
-      margin-left: 250px;
-      margin-right: 250px;
-      border-radius: 10px; }
-
-nav {
-  grid-area: navbar;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  opacity: 0.92;
-  z-index: 100; }
-  nav #nav_links {
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    padding: 15px; }
-    nav #nav_links a {
-      color: #35eb11;
-      text-decoration: none;
-      margin-right: 30px;
-      margin-left: 20px;
-      font-size: 1.4em;
-      border-bottom: 1px solid transparent;
-      transition: all ease-in-out 0.4s; }
-      nav #nav_links a:hover {
-        color: black;
-        border-bottom-color: black; }
-  nav .dropdown_item {
-    font-size: 0.8em; }
-  nav #categoryMenu {
-    display: none;
-    height: 0px; }
-    nav #categoryMenu ul {
-      list-style: none; }
-      nav #categoryMenu ul a {
-        border-bottom: 1px solid transparent;
-        transition: all ease-in-out 0.4s; }
-        nav #categoryMenu ul a:hover {
-          color: black;
-          border-bottom-color: black; }
-      nav #categoryMenu ul li {
-        font-size: 0.9em; }
-
-.body_content {
-  grid-area: body_content;
-  display: grid;
-  grid-template-areas: "side_bar category_section category_section category_section ads_bar" "side_bar hiking_category hiking_category hiking_category ads_bar" "side_bar hiking_content hiking_content hiking_content ads_bar" "side_bar fishing_category fishing_category fishing_category ads_bar" "side_bar fishing_content fishing_content fishing_content ads_bar" "side_bar rock_category rock_category rock_category ads_bar" "side_bar rock_content rock_content rock_content ads_bar" "side_bar camp_category camp_category camp_category ads_bar" "side_bar camp_content camp_content camp_content ads_bar";
-  grid-template-columns: 15% 1fr 1fr 1fr 15%;
-  grid-gap: 10px; }
-
-.side_bar {
-  grid-area: side_bar;
-  font-family: 'Raleway', sans-serif; }
-  .side_bar .side_bar_info {
-    height: 300px;
-    position: sticky;
-    top: 150px;
-    box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.747);
-    margin-top: 14px; }
-    .side_bar .side_bar_info h3 {
-      margin-left: 14px;
-      font-size: 1.5em; }
-    .side_bar .side_bar_info ul {
-      list-style: none;
-      line-height: 50px;
-      margin-left: -40px;
-      font-size: 1.25em; }
-      .side_bar .side_bar_info ul a {
-        color: black;
-        text-decoration: none; }
-        .side_bar .side_bar_info ul a li:hover {
-          color: red; }
-
-.category_section {
-  grid-area: category_section;
-  border: 1px solid black;
-  line-height: 50px;
-  height: 300px;
-  padding: 10px; }
-  .category_section h2 {
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-    font-size: 1.75em; }
-  .category_section .hiking_box {
-    height: 100px;
-    width: 14%;
-    float: left;
-    background: url("../images/hike.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 70px; }
-  .category_section .fishing_box {
-    height: 100px;
-    width: 14%;
-    float: left;
-    background: url("../images/fish.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 100px; }
-  .category_section .climbing_box {
-    height: 100px;
-    width: 14%;
-    float: left;
-    background: url("../images/rock.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 100px;
-    margin-right: 70px; }
-  .category_section .camping_box {
-    height: 100px;
-    width: 14%;
-    float: left;
-    background: url("../images/tent.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 70px; }
-  .category_section .hiking_text {
-    height: 50px;
-    width: 14%;
-    float: left;
-    margin-left: 70px; }
-    .category_section .hiking_text h3 {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.25em; }
-  .category_section .fishing_text {
-    height: 50px;
-    width: 14%;
-    float: left;
-    margin-left: 100px; }
-    .category_section .fishing_text h3 {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.25em; }
-  .category_section .climbing_text {
-    height: 50px;
-    width: 14%;
-    float: left;
-    margin-left: 100px;
-    margin-right: 70px; }
-    .category_section .climbing_text h3 {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.25em; }
-  .category_section .camping_text {
-    height: 50px;
-    width: 14%;
-    float: left;
-    margin-right: 70px; }
-    .category_section .camping_text h3 {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.25em; }
-
-.ads_bar {
-  grid-area: ads_bar;
-  border: 1px solid black; }
-
-.hiking_category {
-  grid-area: hiking_category;
-  padding: 5px;
-  background-color: #008aca;
-  color: white;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 120px; }
-
-.hiking_cat_content {
-  display: grid;
-  grid-area: hiking_content;
-  grid-template-areas: 'cat_text1 cat_text1 cat_text1' 'hiking_img1 hiking_img2 hiking_img3' 'info_box1 info_box1 info_box1';
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; }
-
-#cat_text1 {
-  grid-area: cat_text1;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
-  #cat_text1 a:link {
-    text-decoration: none; }
-
-#hiking_img1 {
-  grid-area: hiking_img1;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/lionshead.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #hiking_img1:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#hiking_img2 {
-  grid-area: hiking_img2;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  height: 280px;
-  background: url("../images/skeleton.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #hiking_img2:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#hiking_img3 {
-  grid-area: hiking_img3;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/motte.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #hiking_img3:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-.info_box1 {
-  grid-area: info_box1;
-  height: 300px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: none;
-  font-family: 'Poppins', sans-serif; }
-  .info_box1 h4 {
-    color: #0a7bfc; }
-  .info_box1 #lionshead {
-    margin-top: 10px;
-    display: none; }
-    .info_box1 #lionshead h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box1 #skeleton {
-    margin-top: 10px;
-    display: none; }
-    .info_box1 #skeleton h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box1 #motte {
-    margin-top: 10px;
-    display: none; }
-    .info_box1 #motte h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-
-#infobox {
-  display: none; }
-
-.fishing_category {
-  grid-area: fishing_category;
-  padding: 5px;
-  background-color: #008aca;
-  color: white;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 120px; }
-
-.fishing_cat_content {
-  display: grid;
-  grid-area: fishing_content;
-  grid-template-areas: 'cat_text1 cat_text1 cat_text1' 'fishing_img1 fishing_img2 fishing_img3' 'info_box2 info_box2 info_box2';
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; }
-
-#cat_text1 {
-  grid-area: cat_text1;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
-  #cat_text1 a:link {
-    text-decoration: none; }
-
-#fishing_img1 {
-  grid-area: fishing_img1;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/kommetjie.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #fishing_img1:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#fishing_img2 {
-  grid-area: fishing_img2;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  height: 320px;
-  background: url("../images/rooikrans.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #fishing_img2:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#fishing_img3 {
-  grid-area: fishing_img3;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/capepeninsula.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #fishing_img3:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-.info_box2 {
-  grid-area: info_box2;
-  height: 300px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: none;
-  font-family: 'Poppins', sans-serif; }
-  .info_box2 h4 {
-    color: #0a7bfc; }
-  .info_box2 #kommetjie {
-    margin-top: 10px;
-    display: none; }
-    .info_box2 #kommetjie h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box2 #rooikrans {
-    margin-top: 10px;
-    display: none; }
-    .info_box2 #rooikrans h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box2 #capepen {
-    margin-top: 10px;
-    display: none; }
-    .info_box2 #capepen h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-
-#infobox2 {
-  display: none; }
-
-.rock_category {
-  grid-area: rock_category;
-  padding: 5px;
-  background-color: #008aca;
-  color: white;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 120px; }
-
-.rock_cat_content {
-  display: grid;
-  grid-area: rock_content;
-  grid-template-areas: "cat_text1 cat_text1 cat_text1" "rock_img1 rock_img2 rock_img3" "info_box3 info_box3 info_box3";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; }
-
-#cat_text1 {
-  grid-area: cat_text1;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
-  #cat_text1 a:link {
-    text-decoration: none; }
-
-#rock_img1 {
-  grid-area: rock_img1;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/rocklands.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #rock_img1:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#rock_img2 {
-  grid-area: rock_img2;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  height: 280px;
-  background: url("../images/tablemountain.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #rock_img2:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#rock_img3 {
-  grid-area: rock_img3;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/paarl.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #rock_img3:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-.info_box3 {
-  grid-area: info_box3;
-  height: 300px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: none;
-  font-family: 'Poppins', sans-serif; }
-  .info_box3 h4 {
-    color: #0a7bfc; }
-  .info_box3 #rocklands {
-    margin-top: 10px;
-    display: none; }
-    .info_box3 #rocklands h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box3 #tablemountain {
-    margin-top: 10px;
-    display: none; }
-    .info_box3 #tablemountain h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box3 #paarl {
-    margin-top: 10px;
-    display: none; }
-    .info_box3 #paarl h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-
-#infobox3 {
-  display: none; }
-
-.camp_category {
-  grid-area: camp_category;
-  padding: 5px;
-  background-color: #008aca;
-  color: white;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 120px; }
-
-.camp_cat_content {
-  display: grid;
-  grid-area: camp_content;
-  grid-template-areas: 'cat_text1 cat_text1 cat_text1' 'camp_img1 camp_img2 camp_img3' 'info_box4 info_box4 info_box4';
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; }
-
-#cat_text1 {
-  grid-area: cat_text1;
-  height: 40px;
-  text-align: center;
-  color: black;
-  font-size: 1.25em;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 25px; }
-  #cat_text1 a:link {
-    text-decoration: none; }
-
-#camp_img1 {
-  grid-area: camp_img1;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/secretfalls.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #camp_img1:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#camp_img2 {
-  grid-area: camp_img2;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  height: 280px;
-  background: url("../images/beaverlac.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #camp_img2:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-#camp_img3 {
-  grid-area: camp_img3;
-  box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.658);
-  height: 300px;
-  line-height: 20px;
-  transition: all ease-out 0.5s;
-  background: url("../images/wolfkop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  #camp_img3:hover {
-    transform: scale(1.08);
-    transition: all ease-out 0.5s; }
-
-.info_box4 {
-  grid-area: info_box4;
-  height: 300px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: none;
-  font-family: 'Poppins', sans-serif; }
-  .info_box4 h4 {
-    color: #0a7bfc; }
-  .info_box4 #secretfalls {
-    margin-top: 10px;
-    display: none; }
-    .info_box4 #secretfalls h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box4 #beaverlac {
-    margin-top: 10px;
-    display: none; }
-    .info_box4 #beaverlac h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-  .info_box4 #wolfkop {
-    margin-top: 10px;
-    display: none; }
-    .info_box4 #wolfkop h4 {
-      text-decoration: underline;
-      font-size: 1.25em; }
-
-#infobox4 {
-  display: none; }
-
-.quote_section {
-  grid-area: quote_section;
-  text-align: center;
-  color: white;
-  background: rgba(4, 145, 23, 0.726);
-  padding: 40px;
-  letter-spacing: 2px;
-  font-family: 'Varela', sans-serif;
-  margin-top: 120px; }
-  .quote_section h2 {
-    font-size: 2em; }
-  .quote_section h3 {
-    font-size: 1.65em;
-    color: black; }
-  .quote_section button {
-    background-color: #494949;
-    color: white;
-    padding: 16px 32px;
-    border: none;
-    transition: 0.3s;
-    font-size: 1.25em;
-    font-family: 'Varela', sans-serif; }
-    .quote_section button:hover {
-      background-color: black; }
-
-footer {
-  grid-area: footer;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-family: 'Raleway', sans-serif; }
-
-.contact_grid-container {
-  display: grid;
-  grid-template-areas: "contact-img contact-img contact-img" "navbar navbar navbar" "contactBox contactBox contactBox";
-  grid-template-columns: 1fr 1fr 1fr; }
-
-.contact_img {
-  grid-area: contact-img;
-  background: url("../images/contact_home.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; }
-
-.mainContactBox {
-  grid-area: contactBox;
-  height: 80vh;
-  margin-top: 100px;
-  padding: 10px;
-  display: grid;
-  grid-template-areas: 'contactText contactForm contactMap';
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 100px;
-  margin-right: 100px;
-  grid-gap: 20px;
-  font-family: 'Raleway', sans-serif;
-  background-color: rgba(51, 51, 51, 0.527); }
-  .mainContactBox h3 {
-    color: #0061cf; }
-  .mainContactBox h2 {
-    color: #0061cf; }
-
-.contactText {
-  grid-area: contactText;
-  border: 1px solid black;
-  border-color: white;
-  height: 79vh;
-  float: left;
-  background-color: white;
-  opacity: 0.96;
-  height: 50vh; }
-
-.contactForm {
-  grid-area: contactForm;
-  border: 1px solid black;
-  border-color: white;
-  height: 79vh;
-  float: left;
-  background-color: white;
-  opacity: 0.96; }
-  .contactForm #labelText {
-    float: left;
-    font-size: 1.25em; }
-  .contactForm #labelBox {
-    float: left;
-    margin-left: 30px; }
-    .contactForm #labelBox input {
-      height: 22px;
-      width: 200px; }
-    .contactForm #labelBox select {
-      height: 30px;
-      width: 205px; }
-    .contactForm #labelBox textarea {
-      width: 200px;
-      height: 80px; }
-  .contactForm button {
-    background-color: #494949;
-    color: white;
-    padding: 16px 32px;
-    border: none;
-    transition: 0.3s;
-    font-size: 1.25em;
-    font-family: 'Varela', sans-serif;
-    margin-top: 50px;
-    border-radius: 10px; }
-    .contactForm button:hover {
-      background-color: black; }
-
-.contactMap {
-  grid-area: contactMap;
-  border: 1px solid black;
-  height: 79vh;
-  float: left;
-  background-color: white;
-  opacity: 0.96;
-  height: 50vh; }
-  .contactMap #contact_map {
-    height: 38vh;
-    background: url("../images/myMap.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 95%; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+sass/_contact.scss:90:in `contactBox'
+sass/_contact.scss:90
+sass/style.scss:589
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+C:/Ruby25-x64/bin/sass:23:in `load'
+C:/Ruby25-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'contactBox'.\A         on line 90 of sass/_contact.scss, in `contactBox'\A         from line 90 of sass/_contact.scss\A         from line 589 of sass/style.scss\A \A 85:             text-decoration: none;\A 86:             margin-right: 30px;\A 87:             margin-left: 20px;\A 88:             font-size: 1.4em;\A 89:             border-bottom: 1px solid transparent;\A 90:             transition: all ease-in-out 0.4s;\A 91: \A 92:             &:hover{\A 93:                 color: $navbarHoverColor;\A 94:                 border-bottom-color: $navbarHoverColor;\A 95:             }"; }
