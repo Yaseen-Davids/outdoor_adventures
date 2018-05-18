@@ -1,0 +1,20 @@
+/* THIS IS THE DEVICE STYLESHEET */
+
+/* MOBILE DEVICES */
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2){}
+
+/* TABLET DEVICES */
+@media only screen
+  and (min-device-width: 500px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2){}
+
+/* LARGE DESKTOP DEVICES */
+@media only screen
+  and (min-device-width: 1600px)
+  and (max-device-width: 2560px)
+  and (-webkit-min-device-pixel-ratio: 2){}
+
