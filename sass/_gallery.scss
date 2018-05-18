@@ -63,31 +63,48 @@
     border: $borderSettings;
     height: 250px;
     box-shadow: 3px 3px 10px black;
+    background: url('../images/hike1.jpg');
+    @include backgroundImgSettings;
 }
 .hike_img2{
     grid-area: hike_img2;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/hike2.jpg');
+    @include backgroundImgSettings;
 }
 .hike_img3{
     grid-area: hike_img3;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/hike3.jpg');
+    @include backgroundImgSettings;
 }
 .hike_img4{
     grid-area: hike_img4;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/hike4.jpg');
+    @include backgroundImgSettings;
 }
 .hike_img5{
     grid-area: hike_img5;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/hike5.jpg');
+    @include backgroundImgSettings;
 }
 .hike_img6{
     grid-area: hike_img6;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/hike6.jpg');
+    @include backgroundImgSettings;
 }
 
 // ############# FISHING CATEGORY AND IMAGES #############
@@ -102,31 +119,49 @@
     grid-area: fish_img1;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/fish1.jpg');
+    @include backgroundImgSettings;
 }
 .fish_img2{
     grid-area: fish_img2;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/fish2.jpg');
+    @include backgroundImgSettings;
 }
 .fish_img3{
     grid-area: fish_img3;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/fish3.jpg');
+    @include backgroundImgSettings;
 }
 .fish_img4{
     grid-area: fish_img4;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/fish4.jpg');
+    @include backgroundImgSettings;
 }
 .fish_img5{
     grid-area: fish_img5;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/fish5.jpg');
+    @include backgroundImgSettings;
 }
 .fish_img6{
     grid-area: fish_img6;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/fish6.jpg');
+    @include backgroundImgSettings;
 }
 
 // ############# ROCK CLIMBING CATEGORY AND IMAGES #############
@@ -141,31 +176,49 @@
     grid-area: rock_img1;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/rock1.jpg');
+    @include backgroundImgSettings;
 }
 .rock_img2{
     grid-area: rock_img2;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/rock2.jpg');
+    @include backgroundImgSettings;
 }
 .rock_img3{
     grid-area: rock_img3;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/rock3.jpg');
+    @include backgroundImgSettings;
 }
 .rock_img4{
     grid-area: rock_img4;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/rock4.jpg');
+    @include backgroundImgSettings;
 }
 .rock_img5{
     grid-area: rock_img5;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/rock5.jpg');
+    @include backgroundImgSettings;
 }
 .rock_img6{
     grid-area: rock_img6;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/rock6.jpg');
+    @include backgroundImgSettings;
 }
 // ############# CAMPING CATEGORY AND IMAGES #############
 
@@ -179,29 +232,47 @@
     grid-area: camp_img1;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/camp1.jpg');
+    @include backgroundImgSettings;
 }
 .camp_img2{
     grid-area: camp_img2;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/camp2.jpg');
+    @include backgroundImgSettings;
 }
 .camp_img3{
     grid-area: camp_img3;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/camp3.jpg');
+    @include backgroundImgSettings;
 }
 .camp_img4{
     grid-area: camp_img4;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/camp4.jpg');
+    @include backgroundImgSettings;
 }
 .camp_img5{
     grid-area: camp_img5;
     border: $borderSettings;
     height: 250px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/camp5.jpg');
+    @include backgroundImgSettings;
 }
 .camp_img6{
     grid-area: camp_img6;
     border: $borderSettings;
     height: 220px;
+    box-shadow: 3px 3px 10px black;
+    background: url('../images/camp6.jpg');
+    @include backgroundImgSettings;
 }
