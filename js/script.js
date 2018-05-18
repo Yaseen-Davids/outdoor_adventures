@@ -45,7 +45,7 @@ function showLionInfo() {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
         window.scrollTo({ 
-            top: 1371.4249877929688,
+            top: info1Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -74,7 +74,7 @@ function showSkeletonInfo() {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
         window.scrollTo({ 
-            top: 1371.4249877929688,
+            top: info2Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -103,7 +103,7 @@ function showMotteInfo() {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
         window.scrollTo({ 
-            top: 1371.4249877929688,
+            top: info3Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -135,7 +135,7 @@ function showKommetjieInfo() {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
         window.scrollTo({ 
-            top: 1924.25,
+            top: info1Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -165,7 +165,7 @@ function showRooiInfo() {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
         window.scrollTo({ 
-            top: 1924.25,
+            top: info2Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -195,7 +195,7 @@ function showCapeInfo() {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
         window.scrollTo({ 
-            top: 1924.25,
+            top: info3Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -227,7 +227,7 @@ function showRocklandsInfo() {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
         window.scrollTo({ 
-            top: 2457.0750122070312,
+            top: info1Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -257,7 +257,7 @@ function showTablemountInfo() {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
         window.scrollTo({ 
-            top: 2457.0750122070312,
+            top: info2Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -287,7 +287,7 @@ function showPaarlInfo() {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
         window.scrollTo({ 
-            top: 2457.0750122070312,
+            top: info3Show.offsetTop - 300,
             left: 0, 
             behavior: 'smooth' 
           });
@@ -318,11 +318,11 @@ function showSecretInfo() {
     else {
         boxInfo.style.display = "block";
         info1Show.style.display = "block";
-        // window.scrollTo({ 
-        //     top: 2457.0750122070312,
-        //     left: 0, 
-        //     behavior: 'smooth' 
-        //   });
+        window.scrollTo({ 
+            top: info1Show.offsetTop - 300,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -348,11 +348,11 @@ function showBeaverlacInfo() {
     else {
         boxInfo.style.display = "block";
         info2Show.style.display = "block";
-        // window.scrollTo({ 
-        //     top: 2457.0750122070312,
-        //     left: 0, 
-        //     behavior: 'smooth' 
-        //   });
+        window.scrollTo({ 
+            top: info2Show.offsetTop - 300,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -378,11 +378,11 @@ function showWolfInfo() {
     else {
         boxInfo.style.display = "block";
         info3Show.style.display = "block";
-        // window.scrollTo({ 
-        //     top: ypos - 100,
-        //     left: 0, 
-        //     behavior: 'smooth' 
-        //   });
+        window.scrollTo({ 
+            top: info3Show.offsetTop - 300,
+            left: 0, 
+            behavior: 'smooth' 
+          });
     }
 }
 
@@ -435,6 +435,19 @@ function goToCamp() {
     });
 }
 
+function hideCatMenu() {
+    // let hideMenu = document.getElementById("categoryMenu");
+    document.getElementById("categoryMenu").style.display = "none";
+}
+
+function takeMeHome() {
+    window.scrollTo({ 
+        top: 0,
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
 // window.onload = function positionCheck() {
 //     // let hikepos = document.getElementById("goToHike").offsetTop;
 //     // let sidepos = document.getElementById("sideBar").offsetTop;
@@ -443,10 +456,19 @@ function goToCamp() {
 
 //     if (window.scrollY > 1000){
 //         hikeText.style.backgroundColor = "red";
-//         positionCheck();
 //     }
 //     else if (window.scrollY < 1000){
 //         hikeText.style.backgroundColor = "white";
-//         positionCheck();
 //     }
 // }
+
+function submitForm() {
+    let fname = document.forms["myForm"]["fname"].value;
+    let lname = document.forms["myForm"]["lname"].value;
+    let user_email = document.forms["myForm"]["email"].value;
+    let userSelect = document.forms["myForm"]["user_select"].value;
+
+    if (fname != "" && lname != "" && user_email != "" && userSelect != ""){
+        alert("Thank You, We'll get back to you Asap");
+    }
+}

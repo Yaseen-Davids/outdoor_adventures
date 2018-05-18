@@ -9,9 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins|Permanent+Marker|Raleway|Varela" rel="stylesheet">
     <!-- This is the link to my css stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <!-- This is the link to my js script -->
-    <script src="./js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     
@@ -34,11 +31,11 @@
             <nav id="navbar">
                 <!-- This is the navbar links -->
                 <div id="nav_links">
-                    <a href="#">Home</a>
+                    <a href="#home" onclick="takeMeHome()">Home</a>
                     <a href="#cat" id="cat_cont" class="changesize" onclick="showCatMenu()">Categories <span class="dropdown_item">&#9660;</span></a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">Contact Us</a>
-                    <div id="categoryMenu" class="changesize">
+                    <div id="categoryMenu" class="changesize" onclick="hideCatMenu()">
                         <ul>
                             <a href="#go" onclick="goToHike()"><li>Hiking</li></a>
                             <a href="#go" onclick="goToFish()"><li>Fishing</li></a>
@@ -326,6 +323,10 @@
         </div>
 
     </div>
+
+     <!-- This is the link to my js script -->
+     <script src="./js/script.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Permanent+Marker|Raleway|Varela" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This is the main container -->
+    <div id="container" onload="positionCheck();">
+
+        <!-- This is the grid container -->
+        <div class="contact_grid-container">
+
+            <div class="contact_img">
+
+                <!-- This is the navigation bar -->
+                <nav id="navbar">
+                    <!-- This is the navbar links -->
+                    <div id="nav_links">
+                        <a href="index.html" onclick="takeMeHome()">Home</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </nav>
+
+                <div class="mainContactBox">
+                    <div class="contactText">
+                        <b><h2>&nbsp;&nbsp;Contact Us</h2></b>
+                        <br>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;Address :</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;314 Imam Haron Road</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Cape Town, 7925</p>
+                        <br>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;Contact :</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;061 647 8942</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://yaseen-davids.github.io/outdoor_adventures/">Website-Info<p></p></a>
+                    </div>
+                    <div class="contactForm">
+                        <h2>&nbsp;&nbsp;Get In Touch</h2>
+                        <br>
+                        <br>
+                        <form action="" id="myForm">
+                            <div id="labelText">
+                                <label for="fname">&nbsp;&nbsp;First Name:</label>
+                                <br>
+                                <br>
+                                <label for="lname">&nbsp;&nbsp;Last Name: </label>
+                                <br>
+                                <br>
+                                <label for="email">&nbsp;&nbsp;Email Address: </label>
+                                <br>
+                                <br>
+                                <label for="selectOpt">&nbsp;&nbsp;Subject: </label>
+                                <br>
+                                <br>
+                                <label for="msgBox">&nbsp;&nbsp;Comment: </label>
+                            </div>
+                            <div id="labelBox">
+                                <input type="text" name="fname" id="Fname" placeholder="Please enter your first name" required>
+                                <br>
+                                <br>
+                                <input type="text" name="lname" id="Lname" placeholder="Please enter your last name" required>
+                                <br>
+                                <br>
+                                <input type="text" name="email" id="email" placeholder="Please enter your email address" required>
+                                <br>
+                                <br>
+                                <select name="selectOpt" id="user_select" required>
+                                    <option value="" selected="selected" disabled="disabled">(Please select a Category)</option>
+                                    <option value="Hiking">Hiking</option>
+                                    <option value="Fishing">Fishing</option>
+                                    <option value="Rock Climbing">Rock Climbing</option>
+                                    <option value="Camping">Camping</option>
+                                </select>
+                                <br>
+                                <br>
+                                <textarea name="msgBox" placeholder="Please add a comment"></textarea>
+                            </div>
+
+                            <center><button type="submit" onclick="submitForm()">Submit</button></center>
+                        </form>
+                    </div>
+                    <div class="contactMap">
+                        <h2>&nbsp;&nbsp;Where we are situated: </h2>
+                        <center><div id="contact_map"></div></center>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+</html>

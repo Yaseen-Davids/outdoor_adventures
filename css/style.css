@@ -630,4 +630,97 @@ footer {
   text-align: center;
   font-family: 'Raleway', sans-serif; }
 
+.contact_grid-container {
+  display: grid;
+  grid-template-areas: "contact-img contact-img contact-img" "navbar navbar navbar" "contactBox contactBox contactBox";
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.contact_img {
+  grid-area: contact-img;
+  background: url("../images/contact_home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+.mainContactBox {
+  grid-area: contactBox;
+  height: 80vh;
+  margin-top: 100px;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: 'contactText contactForm contactMap';
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 100px;
+  margin-right: 100px;
+  grid-gap: 20px;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(51, 51, 51, 0.527); }
+  .mainContactBox h3 {
+    color: #0061cf; }
+  .mainContactBox h2 {
+    color: #0061cf; }
+
+.contactText {
+  grid-area: contactText;
+  border: 1px solid black;
+  border-color: white;
+  height: 79vh;
+  float: left;
+  background-color: white;
+  opacity: 0.96;
+  height: 50vh; }
+
+.contactForm {
+  grid-area: contactForm;
+  border: 1px solid black;
+  border-color: white;
+  height: 79vh;
+  float: left;
+  background-color: white;
+  opacity: 0.96; }
+  .contactForm #labelText {
+    float: left;
+    font-size: 1.25em; }
+  .contactForm #labelBox {
+    float: left;
+    margin-left: 30px; }
+    .contactForm #labelBox input {
+      height: 22px;
+      width: 200px; }
+    .contactForm #labelBox select {
+      height: 30px;
+      width: 205px; }
+    .contactForm #labelBox textarea {
+      width: 200px;
+      height: 80px; }
+  .contactForm button {
+    background-color: #494949;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    transition: 0.3s;
+    font-size: 1.25em;
+    font-family: 'Varela', sans-serif;
+    margin-top: 50px;
+    border-radius: 10px; }
+    .contactForm button:hover {
+      background-color: black; }
+
+.contactMap {
+  grid-area: contactMap;
+  border: 1px solid black;
+  height: 79vh;
+  float: left;
+  background-color: white;
+  opacity: 0.96;
+  height: 50vh; }
+  .contactMap #contact_map {
+    height: 38vh;
+    background: url("../images/myMap.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95%; }
+
 /*# sourceMappingURL=style.css.map */
