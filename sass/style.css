@@ -150,7 +150,7 @@ nav #categoryMenu ul li {
 
 .category_section {
   grid-area: category_section;
-  border: 1px solid black;
+  border: 1px solid transparent;
   line-height: 50px;
   height: 300px;
   padding: 10px;
@@ -262,7 +262,7 @@ nav #categoryMenu ul li {
 
 .ads_bar {
   grid-area: ads_bar;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 .hiking_category {
@@ -872,7 +872,7 @@ footer {
 
 .contactText {
   grid-area: contactText;
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-color: white;
   height: 79vh;
   float: left;
@@ -883,7 +883,7 @@ footer {
 
 .contactForm {
   grid-area: contactForm;
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-color: white;
   height: 79vh;
   float: left;
@@ -934,7 +934,7 @@ footer {
 
 .contactMap {
   grid-area: contactMap;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 79vh;
   float: left;
   background-color: white;
@@ -979,7 +979,7 @@ footer {
 
 .gall-content {
   grid-area: gall-content;
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: grid;
   grid-template-areas: 'hike_cat hike_cat hike_cat' 'hike_img1 hike_img2 hike_img3' 'hike_img4 hike_img5 hike_img6' 'fish_cat fish_cat fish_cat' 'fish_img1 fish_img2 fish_img3' 'fish_img4 fish_img5 fish_img6' 'rock_cat rock_cat rock_cat' 'rock_img1 rock_img2 rock_img3' 'rock_img4 rock_img5 rock_img6' 'camp_cat camp_cat camp_cat' 'camp_img1 camp_img2 camp_img3' 'camp_img4 camp_img5 camp_img6' 'footer footer footer';
   grid-template-columns: 1fr 1fr 1fr;
@@ -987,7 +987,7 @@ footer {
 }
 
 .hike_cat {
-  border: 1px solid black;
+  border: 1px solid transparent;
   grid-area: hike_cat;
   color: white;
   margin-top: 70px;
@@ -998,7 +998,7 @@ footer {
 
 .hike_img1 {
   grid-area: hike_img1;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike1.jpg");
@@ -1009,7 +1009,7 @@ footer {
 
 .hike_img2 {
   grid-area: hike_img2;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike2.jpg");
@@ -1020,7 +1020,7 @@ footer {
 
 .hike_img3 {
   grid-area: hike_img3;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike3.jpg");
@@ -1031,7 +1031,7 @@ footer {
 
 .hike_img4 {
   grid-area: hike_img4;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike4.jpg");
@@ -1042,7 +1042,7 @@ footer {
 
 .hike_img5 {
   grid-area: hike_img5;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike5.jpg");
@@ -1053,7 +1053,7 @@ footer {
 
 .hike_img6 {
   grid-area: hike_img6;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike6.jpg");
@@ -1063,7 +1063,7 @@ footer {
 }
 
 .fish_cat {
-  border: 1px solid black;
+  border: 1px solid transparent;
   grid-area: fish_cat;
   color: white;
   margin-top: 70px;
@@ -1074,7 +1074,7 @@ footer {
 
 .fish_img1 {
   grid-area: fish_img1;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish1.jpg");
@@ -1085,7 +1085,7 @@ footer {
 
 .fish_img2 {
   grid-area: fish_img2;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish2.jpg");
@@ -1096,7 +1096,7 @@ footer {
 
 .fish_img3 {
   grid-area: fish_img3;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish3.jpg");
@@ -1107,7 +1107,7 @@ footer {
 
 .fish_img4 {
   grid-area: fish_img4;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish4.jpg");
@@ -1118,7 +1118,7 @@ footer {
 
 .fish_img5 {
   grid-area: fish_img5;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish5.jpg");
@@ -1129,7 +1129,7 @@ footer {
 
 .fish_img6 {
   grid-area: fish_img6;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish6.jpg");
@@ -1139,7 +1139,7 @@ footer {
 }
 
 .rock_cat {
-  border: 1px solid black;
+  border: 1px solid transparent;
   grid-area: rock_cat;
   color: white;
   margin-top: 70px;
@@ -1150,7 +1150,7 @@ footer {
 
 .rock_img1 {
   grid-area: rock_img1;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock1.jpg");
@@ -1161,7 +1161,7 @@ footer {
 
 .rock_img2 {
   grid-area: rock_img2;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock2.jpg");
@@ -1172,7 +1172,7 @@ footer {
 
 .rock_img3 {
   grid-area: rock_img3;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock3.jpg");
@@ -1183,7 +1183,7 @@ footer {
 
 .rock_img4 {
   grid-area: rock_img4;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock4.jpg");
@@ -1194,7 +1194,7 @@ footer {
 
 .rock_img5 {
   grid-area: rock_img5;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock5.jpg");
@@ -1205,7 +1205,7 @@ footer {
 
 .rock_img6 {
   grid-area: rock_img6;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock6.jpg");
@@ -1215,7 +1215,7 @@ footer {
 }
 
 .camp_cat {
-  border: 1px solid black;
+  border: 1px solid transparent;
   grid-area: camp_cat;
   color: white;
   margin-top: 70px;
@@ -1226,7 +1226,7 @@ footer {
 
 .camp_img1 {
   grid-area: camp_img1;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp1.jpg");
@@ -1237,7 +1237,7 @@ footer {
 
 .camp_img2 {
   grid-area: camp_img2;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp2.jpg");
@@ -1248,7 +1248,7 @@ footer {
 
 .camp_img3 {
   grid-area: camp_img3;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp3.jpg");
@@ -1259,7 +1259,7 @@ footer {
 
 .camp_img4 {
   grid-area: camp_img4;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp4.jpg");
@@ -1270,7 +1270,7 @@ footer {
 
 .camp_img5 {
   grid-area: camp_img5;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 250px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp5.jpg");
@@ -1281,7 +1281,7 @@ footer {
 
 .camp_img6 {
   grid-area: camp_img6;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 220px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp6.jpg");
