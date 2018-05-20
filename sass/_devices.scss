@@ -8,13 +8,15 @@
 
     // ############################## HOME PAGE ##############################
     .home-img{
+      height: 60vh;
       .header_logo{
+        margin-top: 100px;
         h1{
-          font-size: 0.6em;
+          font-size: 0.7em;
         }
         h3{
           margin-top: 30px;
-          font-size: 0.2em;
+          font-size: 0.6em;
           margin-left: 10px;
           margin-right: 10px;
         }
@@ -23,6 +25,7 @@
 
     nav{
       #nav_links{
+        padding: 5px;
         a{
           font-size: 0.5em;
           margin-right: 10px;
@@ -30,7 +33,7 @@
         }
       }
       #categoryMenu{
-        height: 10px;
+        height: 150px;
       }
     }
     .side_bar{
@@ -89,7 +92,7 @@
     }
 
     .hiking_category{
-      margin-top: 20px;
+      margin-top: 50px;
       font-size: 0.4em;
     }
     #cat_text1{
@@ -107,14 +110,14 @@
       height: 60px;
     }
     .info_box1{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 0.2em;
       height: 80px;
     }
 
     .fishing_category{
-      margin-top: 20px;
+      margin-top: 50px;
       font-size: 0.4em;
     }
     #fishing_img1{
@@ -127,14 +130,14 @@
       height: 60px;
     }
     .info_box2{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 0.2em;
       height: 80px;
     }
 
     .rock_category{
-      margin-top: 20px;
+      margin-top: 50px;
       font-size: 0.4em;
     }
     #rock_img1{
@@ -147,14 +150,14 @@
       height: 60px;
     }
     .info_box3{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 0.2em;
       height: 80px;
     }
 
     .camp_category{
-      margin-top: 20px;
+      margin-top: 50px;
       font-size: 0.4em;
     }
     #camp_img1{
@@ -167,14 +170,14 @@
       height: 60px;
     }
     .info_box4{
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 0.2em;
       height: 80px;
     }
     .quote_section{
       padding: 5px;
-      margin-top: 50px;
+      margin-top: 70px;
       h2{
         font-size: 0.3em;
       }
@@ -183,11 +186,144 @@
       }
       button{
         padding: 2px 8px;
-        font-size: 0.2em;
+        font-size: 0.4em;
       }
     }
     footer{
       font-size: 0.5em;
+    }
+
+    // ############################## GALLERY PAGE ##############################
+    .gallery_grid-container{
+      display: grid;
+      grid-template-areas: 'gallery_img gallery_img gallery_img'
+      'navbar navbar navbar'
+      'gallery-head gallery-head gallery-head'
+      'gall-content gall-content gall-content'
+      ;
+      grid-template-columns: 1fr 1fr 1fr;
+      font-family: 'Raleway', sans-serif;
+    }
+    #gallery_img{
+      height: 40vh;
+    }
+    .gallery_text_header{
+      font-size: 0.8em;
+    }
+    .hike_cat{
+      font-size: 0.6em;
+    }
+    .fish_cat{
+      font-size: 0.6em;
+    }
+    .rock_cat{
+      font-size: 0.6em;
+    }
+    .camp_cat{
+      font-size: 0.6em;
+    }
+    .hike_img1{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .hike_img2{
+      height: 90px;
+      @include logoImgSettings;
+    }
+    .hike_img3{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .hike_img4{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .hike_img5{
+      height: 110px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .hike_img6{
+      height: 100px;
+      @include logoImgSettings;
+    }
+
+    .fish_img1{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .fish_img2{
+      height: 90px;
+      @include logoImgSettings;
+    }
+    .fish_img3{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .fish_img4{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .fish_img5{
+      height: 110px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .fish_img6{
+      height: 100px;
+      @include logoImgSettings;
+    }
+
+    .rock_img1{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .rock_img2{
+      height: 90px;
+      @include logoImgSettings;
+    }
+    .rock_img3{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .rock_img4{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .rock_img5{
+      height: 110px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .rock_img6{
+      height: 100px;
+      @include logoImgSettings;
+    }
+
+    .camp_img1{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .camp_img2{
+      height: 90px;
+      @include logoImgSettings;
+    }
+    .camp_img3{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .camp_img4{
+      height: 100px;
+      @include logoImgSettings;
+    }
+    .camp_img5{
+      height: 110px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .camp_img6{
+      height: 100px;
+      @include logoImgSettings;
     }
 
     // //############## CONTACT PAGE ##############
@@ -253,7 +389,331 @@
 @media only screen
   and (min-device-width: 500px)
   and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2){}
+  and (-webkit-min-device-pixel-ratio: 2){
+
+    // ############################## HOME PAGE ##############################
+    .home-img{
+      height: 60vh;
+      .header_logo{
+        margin-top: 100px;
+        h1{
+          font-size: 1.5em;
+        }
+        h3{
+          margin-top: 30px;
+          font-size: 1em;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    nav{
+      #nav_links{
+        padding: 5px;
+        a{
+          font-size: 1.3em;
+          margin-right: 50px;
+          margin-left: 10px;
+        }
+      }
+      #categoryMenu{
+        height: 250px;
+      }
+    }
+    .side_bar{
+      .side_bar_info{
+        height: 200px;
+        h3{
+          font-size: 1em;
+          margin-left: 2px;
+        }
+        ul{
+          font-size: 0.9em;
+          line-height: 40px;
+        }
+      }
+    }
+    .category_section{
+      height: 220px;
+      padding: 0;
+      h2{
+        font-size: 1em;
+      }
+      .hiking_box{
+        @include R_cat_box1;
+      }
+      .fishing_box{
+        margin-right: 0px;
+        @include R_cat_box1;
+      }
+      .climbing_box{
+        margin-right: 0px;
+        @include R_cat_box1;
+      }
+      .camping_box{
+        margin-left: 0px;
+        @include R_cat_box1;
+        margin-right: 0px;
+      }
+      // This is the hiking logo text
+      .hiking_text{
+        @include R_cat_text1;
+      }
+      // This is the fishing logo text
+      .fishing_text{
+        @include R_cat_text1;
+      }
+      // This is the rock climbing logo text
+      .climbing_text{
+        margin-right: 0px;
+        @include R_cat_text1;
+      }
+      // This is the camping  logo text
+      .camping_text{
+        margin-right: 0px;
+        @include R_cat_text1;
+      }
+    }
+
+    // THIS IS THE HIKING CATEGORY HEADER
+    .hiking_category{
+      margin-top: 50px;
+      font-size: 0.7em;
+    }
+    // THIS IS THE HIKING CATEGORY TEXT
+    #cat_text1{
+      font-size: 0.55em;
+      height: 20px;
+      margin-top: 10px;
+    }
+    // THIS IS THE HIKING CATEGORY IMAGES
+    #hiking_img1{
+      height: 120px;
+    }
+    #hiking_img2{
+      height: 140px;
+    }
+    #hiking_img3{
+      height: 120px;
+    }
+    .info_box1{
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 0.5em;
+      height: 100px;
+    }
+
+    .fishing_category{
+      margin-top: 50px;
+      font-size: 0.7em;
+    }
+    #fishing_img1{
+      height: 120px;
+    }
+    #fishing_img2{
+      height: 140px;
+    }
+    #fishing_img3{
+      height: 120px;
+    }
+    .info_box2{
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 0.5em;
+      height: 100px;
+    }
+
+    .rock_category{
+      margin-top: 50px;
+      font-size: 0.7em;
+    }
+    #rock_img1{
+      height: 120px;
+    }
+    #rock_img2{
+      height: 140px;
+    }
+    #rock_img3{
+      height: 120px;
+    }
+    .info_box3{
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 0.5em;
+      height: 100px;
+    }
+
+    .camp_category{
+      margin-top: 50px;
+      font-size: 0.7em;
+    }
+    #camp_img1{
+      height: 120px;
+    }
+    #camp_img2{
+      height: 140px;
+    }
+    #camp_img3{
+      height: 120px;
+    }
+    .info_box4{
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 0.5em;
+      height: 100px;
+    }
+    .quote_section{
+      padding: 5px;
+      margin-top: 70px;
+      h2{
+        font-size: 1em;
+      }
+      h3{
+        font-size: 0.8em;
+      }
+      button{
+        padding: 4px 8px;
+        font-size: 0.8em;
+      }
+    }
+    footer{
+      font-size: 0.9em;
+    }
+
+    // ############################## GALLERY PAGE ##############################
+    .gallery_grid-container{
+      display: grid;
+      grid-template-areas: 'gallery_img gallery_img gallery_img'
+      'navbar navbar navbar'
+      'gallery-head gallery-head gallery-head'
+      'gall-content gall-content gall-content'
+      ;
+      grid-template-columns: 1fr 1fr 1fr;
+      font-family: 'Raleway', sans-serif;
+    }
+    #gallery_img{
+      height: 60vh;
+    }
+    .gallery_text_header{
+      font-size: 1.5em;
+    }
+    .hike_cat{
+      font-size: 1em;
+    }
+    .fish_cat{
+      font-size: 1em;
+    }
+    .rock_cat{
+      font-size: 1em;
+    }
+    .camp_cat{
+      font-size: 1em;
+    }
+    .hike_img1{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .hike_img2{
+      height: 190px;
+      @include logoImgSettings;
+    }
+    .hike_img3{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .hike_img4{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .hike_img5{
+      height: 210px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .hike_img6{
+      height: 200px;
+      @include logoImgSettings;
+    }
+
+    .fish_img1{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .fish_img2{
+      height: 190px;
+      @include logoImgSettings;
+    }
+    .fish_img3{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .fish_img4{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .fish_img5{
+      height: 210px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .fish_img6{
+      height: 200px;
+      @include logoImgSettings;
+    }
+
+    .rock_img1{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .rock_img2{
+      height: 190px;
+      @include logoImgSettings;
+    }
+    .rock_img3{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .rock_img4{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .rock_img5{
+      height: 210px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .rock_img6{
+      height: 200px;
+      @include logoImgSettings;
+    }
+
+    .camp_img1{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .camp_img2{
+      height: 190px;
+      @include logoImgSettings;
+    }
+    .camp_img3{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .camp_img4{
+      height: 200px;
+      @include logoImgSettings;
+    }
+    .camp_img5{
+      height: 210px;
+      margin-top: -10px;
+      @include logoImgSettings;
+    }
+    .camp_img6{
+      height: 200px;
+      @include logoImgSettings;
+    }
+  }
 
 
 

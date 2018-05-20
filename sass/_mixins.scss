@@ -95,7 +95,7 @@
     color: white;
     margin-top: 70px;
     text-align: center;
-    background-color: rgb(39, 39, 39);
+    background-color: $galleryHeaderColor;
     letter-spacing: 3px;
 }
 
@@ -113,18 +113,34 @@
 
 // ############################ RESPONSIVE MIXINS ############################
 
+// FOR MOBILE VIEW
 @mixin R_cat_box{
     margin-left: 3px;
     display: block;
     width: 23%;
     height: 60px;
 }
-
 @mixin R_cat_text{
     display: block;
     margin-left: 3px;
     width: 23%;
     h3{
         font-size: .3em;
+    }
+}
+
+// FOR TABLE VIEW
+@mixin R_cat_box1{
+    margin-left: 10px;
+    display: block;
+    width: 23%;
+    height: 60px;
+}
+@mixin R_cat_text1{
+    display: block;
+    margin-left: 10px;
+    width: 23%;
+    h3{
+        font-size: 0.8em;
     }
 }

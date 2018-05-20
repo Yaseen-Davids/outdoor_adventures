@@ -406,7 +406,6 @@ function showCatMenu() {
     }
     else{
         showMenu.style.display = "block";
-        showMenu.style.height = "250px";
     }
 }
 
