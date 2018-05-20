@@ -129,7 +129,7 @@
     }
 }
 
-// FOR TABLE VIEW
+// FOR TABLET VIEW
 @mixin R_cat_box1{
     margin-left: 10px;
     display: block;
@@ -142,5 +142,37 @@
     width: 23%;
     h3{
         font-size: 0.8em;
+    }
+}
+
+// FOR LAPTOP VIEW
+@mixin R_cat_box2{
+    margin-left: 12px;
+    display: block;
+    width: 23%;
+    height: 60px;
+}
+@mixin R_cat_text2{
+    display: block;
+    margin-left: 12px;
+    width: 23%;
+    h3{
+        font-size: 1.2em;
+    }
+}
+
+// FOR LARGE DESKTOP VIEW
+@mixin R_cat_box3{
+    margin-left: 30px;
+    display: block;
+    width: 23%;
+    height: 60px;
+}
+@mixin R_cat_text3{
+    display: block;
+    margin-left: 30px;
+    width: 23%;
+    h3{
+        font-size: 2em;
     }
 }
