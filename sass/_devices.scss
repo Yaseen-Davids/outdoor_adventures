@@ -4,7 +4,250 @@
 @media only screen
   and (min-device-width: 1px)
   and (max-device-width: 500px)
-  and (-webkit-min-device-pixel-ratio: 2){}
+  and (-webkit-min-device-pixel-ratio: 2){
+
+    // ############################## HOME PAGE ##############################
+    .home-img{
+      .header_logo{
+        h1{
+          font-size: 0.6em;
+        }
+        h3{
+          margin-top: 30px;
+          font-size: 0.2em;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    nav{
+      #nav_links{
+        a{
+          font-size: 0.5em;
+          margin-right: 10px;
+          margin-left: 0px;
+        }
+      }
+      #categoryMenu{
+        height: 10px;
+      }
+    }
+    .side_bar{
+      .side_bar_info{
+        height: 130px;
+        h3{
+          font-size: 0.5em;
+          margin-left: 2px;
+        }
+        ul{
+          font-size: 0.3em;
+          line-height: 30px;
+        }
+      }
+    }
+    .category_section{
+      height: 220px;
+      padding: 0;
+      h2{
+        font-size: 1em;
+      }
+      .hiking_box{
+        @include R_cat_box;
+      }
+      .fishing_box{
+        margin-right: 0px;
+        @include R_cat_box;
+      }
+      .climbing_box{
+        margin-right: 0px;
+        @include R_cat_box;
+      }
+      .camping_box{
+        margin-left: 0px;
+        @include R_cat_box;
+        margin-right: 0px;
+      }
+      // This is the hiking logo text
+      .hiking_text{
+        @include R_cat_text;
+      }
+      // This is the fishing logo text
+      .fishing_text{
+        @include R_cat_text;
+      }
+      // This is the rock climbing logo text
+      .climbing_text{
+        margin-right: 0px;
+        @include R_cat_text;
+      }
+      // This is the camping  logo text
+      .camping_text{
+        margin-right: 0px;
+        @include R_cat_text;
+      }
+    }
+
+    .hiking_category{
+      margin-top: 20px;
+      font-size: 0.4em;
+    }
+    #cat_text1{
+      font-size: 0.2em;
+      height: 20px;
+      margin-top: 10px;
+    }
+    #hiking_img1{
+      height: 60px;
+    }
+    #hiking_img2{
+      height: 70px;
+    }
+    #hiking_img3{
+      height: 60px;
+    }
+    .info_box1{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 0.2em;
+      height: 80px;
+    }
+
+    .fishing_category{
+      margin-top: 20px;
+      font-size: 0.4em;
+    }
+    #fishing_img1{
+      height: 60px;
+    }
+    #fishing_img2{
+      height: 70px;
+    }
+    #fishing_img3{
+      height: 60px;
+    }
+    .info_box2{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 0.2em;
+      height: 80px;
+    }
+
+    .rock_category{
+      margin-top: 20px;
+      font-size: 0.4em;
+    }
+    #rock_img1{
+      height: 60px;
+    }
+    #rock_img2{
+      height: 70px;
+    }
+    #rock_img3{
+      height: 60px;
+    }
+    .info_box3{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 0.2em;
+      height: 80px;
+    }
+
+    .camp_category{
+      margin-top: 20px;
+      font-size: 0.4em;
+    }
+    #camp_img1{
+      height: 60px;
+    }
+    #camp_img2{
+      height: 70px;
+    }
+    #camp_img3{
+      height: 60px;
+    }
+    .info_box4{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 0.2em;
+      height: 80px;
+    }
+    .quote_section{
+      padding: 5px;
+      margin-top: 50px;
+      h2{
+        font-size: 0.3em;
+      }
+      h3{
+        font-size: 0.2em;
+      }
+      button{
+        padding: 2px 8px;
+        font-size: 0.2em;
+      }
+    }
+    footer{
+      font-size: 0.5em;
+    }
+
+    // //############## CONTACT PAGE ##############
+    // nav{
+    //   font-size: 0.5em;
+    // }
+    // .mainContactBox{
+    //   margin-top: 40px;
+    //   margin-left: 0;
+    //   margin-right: 0;
+    //   grid-gap: 5px;
+    // }
+    // h2{
+    //   font-size: .5em;
+    // }
+    // h3{
+    //   font-size: .5em;
+    // }
+    // p{
+    //   font-size: .5em;
+    // }
+    // label{
+    //   font-size: .5em;
+    // }
+    // a{
+    //   font-size: .5em;
+    // }
+    // .contactForm{
+    //   height: 70vh;
+
+    //   ::placeholder{
+    //     font-size: 0.5em
+    //   }
+    //   input{
+    //     height: 5px;
+    //     width: 50px;
+    //     border-color: white;
+  
+    //     &:focus{
+    //         border-color :blue;
+    //     }
+    //   }
+    //   select{
+    //     height: 5px;
+    //     width: 50px;
+    //     border-color: black;
+    //   }
+  
+    //   textarea{
+    //     height: 5px;
+    //     width: 50px;
+    //     border-color: black;
+    //   }
+    //   button{
+    //     padding: 1px 1px;
+    //     font-size: .5em;
+    //   }
+    // }
+  }
+
 
 /* TABLET DEVICES */
 @media only screen
@@ -12,6 +255,14 @@
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2){}
 
+
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1500px)
+  and (-webkit-min-device-pixel-ratio: 2){}
+
+  
 /* LARGE DESKTOP DEVICES */
 @media only screen
   and (min-device-width: 1600px)

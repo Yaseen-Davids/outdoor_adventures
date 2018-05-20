@@ -13,14 +13,18 @@
 <body>
     
     <!-- This is the main container -->
-    <div id="container" onload="positionCheck();">
+    <div id="container" onscroll="youAreHere();">
 
         <!-- This is the grid container -->
         <div class="grid-container">
 
+            <!-- This is the home image -->
             <div class="home-img">
+                <!-- This is the header logo -->
                 <div class="header_logo">
+                    <!-- This is the heading -->
                     <center><h1><span class="Colortext"><span class="header_line">ThisIsTheLine</span> Outdoor Adventures <span class="header_line">ThisIsTheLine</span></h1></span></center>
+                    <!-- This is the slogan -->
                     <center><h3>
                         When the chaos of city life gets too much, escape into the wild – and stay the night.
                     </h3></center>
@@ -35,11 +39,16 @@
                     <a href="#cat" id="cat_cont" class="changesize" onclick="showCatMenu()">Categories <span class="dropdown_item">&#9660;</span></a>
                     <a href="gallery.html">Gallery</a>
                     <a href="contact.html">Contact Us</a>
+                    <!-- This is the dropdown for the categories -->
                     <div id="categoryMenu" class="changesize" onclick="hideCatMenu()">
                         <ul>
+                            <!-- This link takes the user to the hiking section -->
                             <a href="#go" onclick="goToHike()"><li>Hiking</li></a>
+                            <!-- This link takes the user to the fishing section -->
                             <a href="#go" onclick="goToFish()"><li>Fishing</li></a>
+                            <!-- This link takes the user to the rock climbing section -->
                             <a href="#go" onclick="goToRock()"><li>Rock Climbing</li></a>
+                            <!-- This link takes the user to the camping section -->
                             <a href="#go" onclick="goToCamp()"><li>Camping</li></a>
                         </ul>
                     </div>
@@ -51,12 +60,18 @@
                 
                 <!-- This is the side bar -->
                 <div class="side_bar" id="sideBar">
+                    <!-- This is the side bar links -->
                     <div class="side_bar_info">
+                        <!-- Side bar header -->
                         <h3>Categories</h3>
                         <ul>
+                            <!-- This link takes the user to the hiking section -->
                             <a href="#go" onclick="goToHike()"><li id="hiking_pos">&nbsp;&nbsp;&nbsp;Hiking</li></a>
+                            <!-- This link takes the user to the fishing section -->
                             <a href="#go" onclick="goToFish()"><li id="fishing_pos">&nbsp;&nbsp;&nbsp;Fishing</li></a>
+                            <!-- This link takes the user to the rock climbing section -->
                             <a href="#go" onclick="goToRock()"><li id="rock_pos">&nbsp;&nbsp;&nbsp;Rock Climbing</li></a>
+                            <!-- This link takes the user to the camping section -->
                             <a href="#go" onclick="goToCamp()"><li id="camping_pos">&nbsp;&nbsp;&nbsp;Camping</li></a>
                         </ul>
                     </div>
@@ -88,6 +103,7 @@
                 </div>
 
                 <!-- ##################################### THIS IS THE HIKING CATEGORY ##################################### -->
+                <!-- This is the hiking category header -->
                 <div class="hiking_category" id="goToHike">
                     <h2>Hiking :</h2>
                 </div>
@@ -206,7 +222,7 @@
     
                 <div class="rock_cat_content">
                     <!-- This is Lions head header -->
-                    <a href="#rocklands"><div id="cat_text1" onclick="showRocklandsInfo()">
+                    <a href="#rocklands1"><div id="cat_text1" onclick="showRocklandsInfo()">
                         Rock Climbing in Rocklands
                     </div></a>
                     <!-- This is the skeleton header -->
@@ -321,6 +337,8 @@
             </footer>
 
         </div>
+
+        <!-- <div id="popUpBox"></div> -->
 
     </div>
 

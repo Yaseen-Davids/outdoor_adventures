@@ -1,14 +1,21 @@
 // This is the variables
 
 // This is for the navbar text color
-$navbarTextColor: rgb(53, 235, 17);
+$navbarTextColor: rgb(104, 104, 104);
+
 // This is the for the navbar text when hovering
 $navbarHoverColor : black;
+
 // This is the default border code
-$borderSettings: 1px solid transparent;
+$borderSettings: 1px solid rgb(0, 0, 0);
+
 // This is the category image space
 $categoryImgSpace: 100px;
+
 // This is to centre the text
 $categoryCenter: 70px;
+
 // This is the category header color
 $categoryColor: rgb(0, 138, 202);
+
+// ############################ RESPONSIVE VARIABLES ############################

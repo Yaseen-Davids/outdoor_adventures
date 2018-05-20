@@ -6,6 +6,10 @@
 
 // ############################################### CSS STYLING #####################################################
 
+*{
+    box-sizing: border-box;
+}
+
 // This is the main grid container
 .grid-container{
     display: grid;
@@ -25,13 +29,14 @@ body{
 // This is the home page home image
 .home-img{
     grid-area: home-img;
-    height: 900px;
+    height: 100vh;
     background: url('../images/home.jpg');
     @include backgroundImgSettings;
 
     // This the header logo
     .header_logo{
         margin-top: 200px;
+        text-align: center;
 
         // This is the logo settings
         h1{
@@ -187,6 +192,7 @@ nav{
         font-family: 'Permanent Marker', cursive;
         text-align: center;
         font-size: 1.75em;
+        border: $borderSettings;
     }
 
     // This is the hiking logo
@@ -195,6 +201,7 @@ nav{
        background: url('../images/hike.png');
        @include logoImgSettings;
        margin-left: $categoryCenter;
+       border: $borderSettings;
 
     }
      // This is the fishing logo
@@ -203,6 +210,7 @@ nav{
         background: url('../images/fish.png');
         @include logoImgSettings;
         margin-left: $categoryImgSpace;
+        border: $borderSettings;
     }
      // This is the rock climbing logo
     .climbing_box{
@@ -211,6 +219,7 @@ nav{
         @include logoImgSettings;
         margin-left: $categoryImgSpace;
         margin-right: $categoryCenter;
+        border: $borderSettings;
     }
      // This is the camping logo
     .camping_box{
@@ -218,28 +227,33 @@ nav{
         background: url('../images/tent.png');
         @include logoImgSettings;
         margin-right: $categoryCenter;
+        border: $borderSettings;
     }
 
     // This is the hiking logo text
     .hiking_text{
         @include logoText;
         margin-left: $categoryCenter;
+        border: $borderSettings;
     }
     // This is the fishing logo text
     .fishing_text{
         @include logoText;
         margin-left: $categoryImgSpace;
+        border: $borderSettings;
     }
     // This is the rock climbing logo text
     .climbing_text{
         @include logoText;
         margin-left: $categoryImgSpace;
         margin-right: $categoryCenter;
+        border: $borderSettings;
     }
     // This is the camping  logo text
     .camping_text{
         @include logoText;
         margin-right: $categoryCenter;
+        border: $borderSettings;
     }
 }
 

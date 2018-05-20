@@ -39,6 +39,7 @@ function showLionInfo() {
     if (boxInfo.style.display === "block" && info1Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info1Show.style.display = "none";
+        goToHike();
     }
 
     else {
@@ -69,6 +70,7 @@ function showSkeletonInfo() {
     if (boxInfo.style.display === "block" && info2Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info2Show.style.display = "none";
+        goToHike();
     } 
         else {
         boxInfo.style.display = "block";
@@ -98,6 +100,7 @@ function showMotteInfo() {
     if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info3Show.style.display = "none";
+        goToHike();
     } 
         else {
         boxInfo.style.display = "block";
@@ -129,6 +132,7 @@ function showKommetjieInfo() {
     if (boxInfo.style.display === "block" && info1Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info1Show.style.display = "none";
+        goToFish();
     }
 
     else {
@@ -159,6 +163,7 @@ function showRooiInfo() {
     if (boxInfo.style.display === "block" && info2Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info2Show.style.display = "none";
+        goToFish();
     }
 
     else {
@@ -189,6 +194,7 @@ function showCapeInfo() {
     if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info3Show.style.display = "none";
+        goToFish();
     }
 
     else {
@@ -221,6 +227,7 @@ function showRocklandsInfo() {
     if (boxInfo.style.display === "block" && info1Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info1Show.style.display = "none";
+        goToRock();
     }
 
     else {
@@ -251,6 +258,7 @@ function showTablemountInfo() {
     if (boxInfo.style.display === "block" && info2Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info2Show.style.display = "none";
+        goToRock();
     }
 
     else {
@@ -281,6 +289,7 @@ function showPaarlInfo() {
     if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info3Show.style.display = "none";
+        goToRock();
     }
 
     else {
@@ -313,6 +322,7 @@ function showSecretInfo() {
     if (boxInfo.style.display === "block" && info1Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info1Show.style.display = "none";
+        goToCamp();
     }
 
     else {
@@ -343,6 +353,7 @@ function showBeaverlacInfo() {
     if (boxInfo.style.display === "block" && info2Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info2Show.style.display = "none";
+        goToCamp();
     }
 
     else {
@@ -373,6 +384,7 @@ function showWolfInfo() {
     if (boxInfo.style.display === "block" && info3Show.style.display === 'block'){
         boxInfo.style.display = "none";
         info3Show.style.display = "none";
+        goToCamp();
     }
 
     else {
@@ -436,7 +448,6 @@ function goToCamp() {
 }
 
 function hideCatMenu() {
-    // let hideMenu = document.getElementById("categoryMenu");
     document.getElementById("categoryMenu").style.display = "none";
 }
 
@@ -448,7 +459,7 @@ function takeMeHome() {
     });
 }
 
-// window.onload = function positionCheck() {
+// function positionCheck() {
 //     // let hikepos = document.getElementById("goToHike").offsetTop;
 //     // let sidepos = document.getElementById("sideBar").offsetTop;
 //     let hikeText = document.getElementById("nav_links");
@@ -468,7 +479,9 @@ function submitForm() {
     let user_email = document.forms["myForm"]["email"].value;
     let userSelect = document.forms["myForm"]["user_select"].value;
 
-    if (fname != "" && lname != "" && user_email != "" && userSelect != ""){
+    if ((fname != "") && (lname != "") && (user_email != "") && (userSelect != "")){
         alert("Thank You, We'll get back to you Asap");
     }
 }
+
+// onscroll = function youAreHere() {}
