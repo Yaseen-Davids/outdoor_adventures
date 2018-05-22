@@ -483,4 +483,19 @@ function submitForm() {
     }
 }
 
-// onscroll = function youAreHere() {}
+onscroll = function helper() {
+    let helperBox = document.getElementById("ads_bar");
+    let catSection = document.getElementById("goToHike").offsetTop - 400;
+    let userScroll = window.scrollY;
+    
+    if (userScroll > catSection){
+        helperBox.style.display = "block";
+        helperBox.style.animationName = "topFadeIn";
+        helperBox.style.animationDuration = "2s";
+    }
+    else if (userScroll < catSection) {
+        helperBox.style.animationName = "topFadeOut";
+        helperBox.style.animationDuration = "2s";
+        helperBox.style.display = "none";
+    }
+}

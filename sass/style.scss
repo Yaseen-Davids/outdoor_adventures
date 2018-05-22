@@ -261,9 +261,41 @@ nav{
 }
 
 // This is the ads bar
-.ads_bar{
+#ads_bar{
     grid-area: ads_bar;
     border: $borderSettings;
+    position: sticky;
+    top: 500px;
+    background-color: #ddd;
+    border-color: #aaa; 
+    height: 60px;
+    border: 2px solid #000;
+    margin: 0 auto 15px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: none;
+}
+
+@keyframes topFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+}
+
+@keyframes topFadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
 }
 
 // ################################### HIKING CATEGORY ###################################
