@@ -450,15 +450,22 @@ function submitForm() {
 
 onscroll = function helper() {
     let helperBox = document.getElementById("ads_bar");
+    let backToTop = document.getElementById("backtoTop");
     let catSection = document.getElementById("goToHike").offsetTop - 400;
     let userScroll = window.scrollY;
     
     if (userScroll > catSection){
         helperBox.style.opacity = "1";
         helperBox.style.transition = "all 0.7s";
+        backToTop.style.bottom = "20px";
+        backToTop.style.opacity = "1";
+        backToTop.style.transition = "all 0.7s";
     }
     else if (userScroll < catSection) {
         helperBox.style.opacity = "0";
         helperBox.style.transition = "all 0.7s";
+        backToTop.style.bottom = "-40px";
+        backToTop.style.opacity = "0";
+        backToTop.style.transition = "all 0.7s";
     }
 }
