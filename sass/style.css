@@ -1033,6 +1033,12 @@ footer {
   width: 95%;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .gallery_grid-container {
   display: grid;
   grid-template-areas: 'gallery_img gallery_img gallery_img' 'navbar navbar navbar' 'gallery-head gallery-head gallery-head' 'gall-content gall-content gall-content';
@@ -1784,11 +1790,28 @@ footer {
     background-repeat: no-repeat;
   }
   .mainContactBox {
+    height: 40vh;
     margin-top: 40px;
     margin-left: 0;
     margin-right: 0;
     grid-gap: 5px;
     padding: 2px;
+  }
+  .contact_img {
+    height: 100vh;
+  }
+  .contactForm {
+    height: 50vh;
+  }
+  .contactText {
+    height: 50vh;
+  }
+  .mainContactBox {
+    grid-template-areas: 'contactText contactForm';
+    grid-template-columns: 1fr 1fr;
+  }
+  .contactMap {
+    display: none;
   }
   h2 {
     font-size: .4em;
@@ -1806,7 +1829,7 @@ footer {
     font-size: .3em;
   }
   .contactForm {
-    height: 70vh;
+    height: 20vh;
   }
   .contactForm ::placeholder {
     font-size: 0.4em;

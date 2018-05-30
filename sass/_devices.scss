@@ -370,11 +370,29 @@
 
     // //############## CONTACT PAGE ##############
     .mainContactBox{
+      height: 40vh;
       margin-top: 40px;
       margin-left: 0;
       margin-right: 0;
       grid-gap: 5px;
       padding: 2px;
+    }
+    .contact_img{
+      height: 100vh;
+    }
+    .contactForm{
+      height: 50vh;
+    }
+    .contactText{
+      height: 50vh;
+    }
+    .mainContactBox{
+      grid-template-areas: 'contactText contactForm'
+      ;
+      grid-template-columns: 1fr 1fr;
+    }
+    .contactMap{
+      display: none;
     }
     h2{
       font-size: .4em;
@@ -393,7 +411,7 @@
     }
 
     .contactForm{
-      height: 70vh;
+      height: 20vh;
 
       ::placeholder{
         font-size: 0.4em;
