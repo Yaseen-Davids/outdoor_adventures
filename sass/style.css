@@ -1386,6 +1386,17 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .body_content {
+    display: grid;
+    grid-template-areas: 'category_section category_section category_section' 'hiking_category hiking_category hiking_category' 'hiking_content hiking_content hiking_content' 'fishing_category fishing_category fishing_category' 'fishing_content fishing_content fishing_content' 'rock_category rock_category rock_category' 'rock_content rock_content rock_content' 'camp_category camp_category camp_category' 'camp_content camp_content camp_content';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #ads_bar {
+    display: none;
+  }
   nav #nav_links {
     padding: 5px;
   }
@@ -1397,16 +1408,8 @@ footer {
   nav #categoryMenu {
     height: 150px;
   }
-  .side_bar .side_bar_info {
-    height: 130px;
-  }
-  .side_bar .side_bar_info h3 {
-    font-size: 0.5em;
-    margin-left: 2px;
-  }
-  .side_bar .side_bar_info ul {
-    font-size: 0.3em;
-    line-height: 30px;
+  .side_bar {
+    display: none;
   }
   .category_section {
     height: 220px;
@@ -1487,13 +1490,13 @@ footer {
     margin-top: 10px;
   }
   #hiking_img1 {
-    height: 60px;
+    height: 80px;
   }
   #hiking_img2 {
-    height: 70px;
+    height: 90px;
   }
   #hiking_img3 {
-    height: 60px;
+    height: 80px;
   }
   .info_box1 {
     margin-left: 10px;
@@ -1506,13 +1509,13 @@ footer {
     font-size: 0.4em;
   }
   #fishing_img1 {
-    height: 60px;
+    height: 80px;
   }
   #fishing_img2 {
-    height: 70px;
+    height: 90px;
   }
   #fishing_img3 {
-    height: 60px;
+    height: 80px;
   }
   .info_box2 {
     margin-left: 10px;
@@ -1525,13 +1528,13 @@ footer {
     font-size: 0.4em;
   }
   #rock_img1 {
-    height: 60px;
+    height: 80px;
   }
   #rock_img2 {
-    height: 70px;
+    height: 90px;
   }
   #rock_img3 {
-    height: 60px;
+    height: 80px;
   }
   .info_box3 {
     margin-left: 10px;
@@ -1544,13 +1547,13 @@ footer {
     font-size: 0.4em;
   }
   #camp_img1 {
-    height: 60px;
+    height: 80px;
   }
   #camp_img2 {
-    height: 70px;
+    height: 90px;
   }
   #camp_img3 {
-    height: 60px;
+    height: 80px;
   }
   .info_box4 {
     margin-left: 10px;
