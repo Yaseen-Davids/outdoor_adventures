@@ -1,24 +1,3 @@
-// function checkHeight() {
-//     var currentScrollPos = document.documentElement.scrollTop;
-//     var navHead = document.getElementById("nav_header");
-
-//     if (currentScrollPos < 750) {
-//         navHead.style.display = "none";
-//         navHead.style.backgroundColor = "#333";
-
-//     }
-//     else if (currentScrollPos > 750) {
-//         navHead.style.display = "block";
-//         navHead.style.opacity = "1";
-//     }
-// }
-
-// function smoothScroll() {
-//     $('html, body').animate({
-//         scrollTop: $($(this).attr('href')).offset().top
-//     }, 1700);
-// }
-
 // ##################################### HIKING CATEGORY #####################################
 
 function showLionInfo() {
@@ -458,20 +437,6 @@ function takeMeHome() {
     });
 }
 
-// function positionCheck() {
-//     // let hikepos = document.getElementById("goToHike").offsetTop;
-//     // let sidepos = document.getElementById("sideBar").offsetTop;
-//     let hikeText = document.getElementById("nav_links");
-//     // let currentScrollPos = document.documentElement.scrollTop;
-
-//     if (window.scrollY > 1000){
-//         hikeText.style.backgroundColor = "red";
-//     }
-//     else if (window.scrollY < 1000){
-//         hikeText.style.backgroundColor = "white";
-//     }
-// }
-
 function submitForm() {
     let fname = document.forms["myForm"]["fname"].value;
     let lname = document.forms["myForm"]["lname"].value;
@@ -489,13 +454,11 @@ onscroll = function helper() {
     let userScroll = window.scrollY;
     
     if (userScroll > catSection){
-        helperBox.style.display = "block";
-        helperBox.style.animationName = "topFadeIn";
-        helperBox.style.animationDuration = "2s";
+        helperBox.style.opacity = "1";
+        helperBox.style.transition = "all 0.7s";
     }
     else if (userScroll < catSection) {
-        helperBox.style.animationName = "topFadeOut";
-        helperBox.style.animationDuration = "2s";
-        helperBox.style.display = "none";
+        helperBox.style.opacity = "0";
+        helperBox.style.transition = "all 0.7s";
     }
 }
