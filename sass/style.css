@@ -1542,6 +1542,10 @@ footer {
     font-size: 0.2em;
     height: 80px;
   }
+  #backtoTop {
+    padding: 5px;
+    font-size: 0.5em;
+  }
   .rock_category {
     margin-top: 50px;
     font-size: 0.4em;
@@ -1602,6 +1606,16 @@ footer {
     grid-template-areas: 'gallery_img gallery_img gallery_img' 'navbar navbar navbar' 'gallery-head gallery-head gallery-head' 'gall-content gall-content gall-content';
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Raleway', sans-serif;
+  }
+  .gall-content {
+    grid-area: gall-content;
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-areas: 'hike_cat hike_cat' 'hike_img1 hike_img2' 'hike_img3 hike_img4' 'hike_img5 hike_img6' 'fish_cat fish_cat' 'fish_img1 fish_img2' 'fish_img3 fish_img4' 'fish_img5 fish_img6' 'rock_cat rock_cat' 'rock_img1 rock_img2' 'rock_img3 rock_img4' 'rock_img5 rock_img6' 'camp_cat camp_cat' 'camp_img1 camp_img2' 'camp_img3 camp_img4' 'camp_img5 camp_img6' 'footer footer';
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   #gallery_img {
     height: 40vh;
@@ -1823,6 +1837,13 @@ footer {
 
 /* TABLET DEVICES */
 @media only screen and (min-device-width: 500px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+  #ads_bar {
+    display: none;
+  }
+  #backtoTop {
+    padding: 5px;
+    font-size: 0.7em;
+  }
   .home-img {
     height: 60vh;
   }

@@ -144,6 +144,10 @@
       font-size: 0.2em;
       height: 80px;
     }
+    #backtoTop{
+      padding: 5px;
+      font-size: 0.5em;
+    }
 
     .rock_category{
       margin-top: 50px;
@@ -213,6 +217,35 @@
       grid-template-columns: 1fr 1fr 1fr;
       font-family: 'Raleway', sans-serif;
     }
+
+    .gall-content{
+      grid-area: gall-content;
+      border: $borderSettings;
+      display: grid;
+      grid-template-areas: 'hike_cat hike_cat'
+      'hike_img1 hike_img2'
+      'hike_img3 hike_img4'
+      'hike_img5 hike_img6'
+      'fish_cat fish_cat'
+      'fish_img1 fish_img2'
+      'fish_img3 fish_img4'
+      'fish_img5 fish_img6'
+      'rock_cat rock_cat'
+      'rock_img1 rock_img2'
+      'rock_img3 rock_img4'
+      'rock_img5 rock_img6'
+      'camp_cat camp_cat'
+      'camp_img1 camp_img2'
+      'camp_img3 camp_img4'
+      'camp_img5 camp_img6'
+      'footer footer'
+      ;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
     #gallery_img{
       height: 40vh;
     }
@@ -399,6 +432,13 @@
   and (-webkit-min-device-pixel-ratio: 2){
 
     // ############################## HOME PAGE ##############################
+    #ads_bar{
+      display: none;
+    }
+    #backtoTop{
+      padding: 5px;
+      font-size: 0.7em;
+    }
     .home-img{
       height: 60vh;
       .header_logo{
