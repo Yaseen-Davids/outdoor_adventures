@@ -465,10 +465,14 @@
           margin-left: 2px;
         }
         ul{
-          font-size: 0.9em;
-          line-height: 40px;
+          font-size: 1.7em;
+          line-height: 35px;
         }
       }
+    }
+    #backtoTop{
+      padding: 12px;
+      font-size: 1.2em;
     }
     .category_section{
       height: 220px;
@@ -515,11 +519,11 @@
     // THIS IS THE HIKING CATEGORY HEADER
     .hiking_category{
       margin-top: 50px;
-      font-size: 0.7em;
+      font-size: 1.4em;
     }
     // THIS IS THE HIKING CATEGORY TEXT
     #cat_text1{
-      font-size: 0.55em;
+      font-size: 1.3em;
       height: 20px;
       margin-top: 10px;
     }
@@ -536,13 +540,13 @@
     .info_box1{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.5em;
-      height: 100px;
+      font-size: 1.2em;
+      height: 180px;
     }
 
     .fishing_category{
       margin-top: 50px;
-      font-size: 0.7em;
+      font-size: 1.4em;
     }
     #fishing_img1{
       height: 120px;
@@ -556,13 +560,13 @@
     .info_box2{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.5em;
-      height: 100px;
+      font-size: 1.2em;
+      height: 180px;
     }
 
     .rock_category{
       margin-top: 50px;
-      font-size: 0.7em;
+      font-size: 1.4em;
     }
     #rock_img1{
       height: 120px;
@@ -576,13 +580,13 @@
     .info_box3{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.5em;
-      height: 100px;
+      font-size: 1.2em;
+      height: 180px;
     }
 
     .camp_category{
       margin-top: 50px;
-      font-size: 0.7em;
+      font-size: 1.4em;
     }
     #camp_img1{
       height: 120px;
@@ -596,21 +600,21 @@
     .info_box4{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.5em;
-      height: 100px;
+      font-size: 1.2em;
+      height: 180px;
     }
     .quote_section{
       padding: 5px;
       margin-top: 70px;
       h2{
-        font-size: 1em;
+        font-size: 1.2em;
       }
       h3{
-        font-size: 0.8em;
+        font-size: 1.2em;
       }
       button{
-        padding: 4px 8px;
-        font-size: 0.8em;
+        padding: 10px 20px;
+        font-size: 1.7em;
       }
     }
     footer{
@@ -632,19 +636,19 @@
       height: 60vh;
     }
     .gallery_text_header{
-      font-size: 1.5em;
+      font-size: 2em;
     }
     .hike_cat{
-      font-size: 1em;
+      font-size: 2em;
     }
     .fish_cat{
-      font-size: 1em;
+      font-size: 2em;
     }
     .rock_cat{
-      font-size: 1em;
+      font-size: 2em;
     }
     .camp_cat{
-      font-size: 1em;
+      font-size: 2em;
     }
     .hike_img1{
       height: 200px;
@@ -750,6 +754,10 @@
       @include logoImgSettings;
     }
 
+    footer{
+      font-size: 2em;
+    }
+
   // //############## CONTACT PAGE ##############
   .mainContactBox{
     margin-top: 40px;
@@ -759,26 +767,26 @@
     padding: 2px;
   }
   h2{
-    font-size: .7em;
+    font-size: 1em;
   }
   h3{
-    font-size: .5em;
+    font-size: .8em;
   }
   p{
-    font-size: .5em;
+    font-size: .8em;
   }
   label{
-    font-size: .6em;
+    font-size: .8em;
   }
   a{
-    font-size: .5em;
+    font-size: .8em;
   }
 
   .contactForm{
     height: 70vh;
 
     ::placeholder{
-      font-size: 0.4em;
+      font-size: 0.7em;
     }
     input{
       height: 20px;
@@ -793,7 +801,7 @@
     select{
       height: 20px;
       width: 150px;
-      font-size: .4em;
+      font-size: .7em;
     }
 
     textarea{
@@ -802,7 +810,7 @@
     }
     button{
       padding: 4px 16px;
-      font-size: 0.7em;
+      font-size: 1.2em;
     }
   }
 }
