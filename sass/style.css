@@ -885,7 +885,7 @@ footer {
 
 .contact_grid-container {
   display: grid;
-  grid-template-areas: 'contact-img contact-img contact-img' 'navbar navbar navbar' 'contactBox contactBox contactBox' 'footer footer footer';
+  grid-template-areas: 'contact-img contact-img contact-img' 'navbar navbar navbar' 'contactBox contactBox contactBox';
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -906,7 +906,7 @@ footer {
   margin-top: 100px;
   padding: 10px;
   display: grid;
-  grid-template-areas: 'contactText contactForm contactMap';
+  grid-template-areas: 'contactText contactForm contactMap' 'footer footer footer';
   grid-template-columns: 1fr 1fr 1fr;
   margin-left: 100px;
   margin-right: 100px;
@@ -1034,15 +1034,13 @@ footer {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
 .gallery_grid-container {
   display: grid;
   grid-template-areas: 'gallery_img gallery_img gallery_img' 'navbar navbar navbar' 'gallery-head gallery-head gallery-head' 'gall-content gall-content gall-content';
-  grid-template-columns: 15% 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -1789,72 +1787,29 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
   }
-  .mainContactBox {
-    height: 40vh;
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    grid-gap: 5px;
-    padding: 2px;
+  nav {
+    font-size: 2em;
   }
-  .contact_img {
+  .contact_grid-container {
+    display: grid;
+    grid-template-areas: 'contactText' 'contactForm' 'footer';
+    grid-template-columns: 1fr;
+  }
+  .mainContactBox {
     height: 100vh;
-  }
-  .contactForm {
-    height: 50vh;
-  }
-  .contactText {
-    height: 50vh;
-  }
-  .mainContactBox {
-    grid-template-areas: 'contactText contactForm';
-    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
   }
   .contactMap {
     display: none;
   }
-  h2 {
-    font-size: .4em;
-  }
-  h3 {
-    font-size: .3em;
-  }
-  p {
-    font-size: .2em;
-  }
-  label {
-    font-size: .5em;
-  }
-  a {
-    font-size: .3em;
+  .contactText {
+    height: 100vh;
+    width: 100%;
   }
   .contactForm {
-    height: 20vh;
-  }
-  .contactForm ::placeholder {
-    font-size: 0.4em;
-  }
-  .contactForm input {
-    height: 10px;
-    width: 80px;
-    padding: 8px;
-    margin-top: 10px;
-  }
-  .contactForm input:focus {
-    border-color: blue;
-  }
-  .contactForm select {
-    height: 10px;
-    width: 80px;
-    font-size: 0.4em;
-  }
-  .contactForm textarea {
-    height: 40px;
-    width: 80px;
-  }
-  .contactForm button {
-    padding: 4px 8px;
-    font-size: .5em;
+    height: 100vh;
   }
 }
 

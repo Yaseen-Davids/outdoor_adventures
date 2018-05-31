@@ -5,7 +5,6 @@
     grid-template-areas: 'contact-img contact-img contact-img'
     'navbar navbar navbar'
     'contactBox contactBox contactBox'
-    'footer footer footer'
     ;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -25,7 +24,8 @@
     margin-top: 100px;
     padding: 10px;
     display: grid;
-    grid-template-areas: 'contactText contactForm contactMap';
+    grid-template-areas: 'contactText contactForm contactMap'
+    'footer footer footer';
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 100px;
     margin-right: 100px;
@@ -122,7 +122,5 @@
     }
 }
 footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
