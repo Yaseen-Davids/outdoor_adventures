@@ -21,7 +21,7 @@
     grid-area: contactBox;
     border: $borderSettings;
     height: 80vh;
-    margin-top: 100px;
+    margin-top: 150px;
     padding: 10px;
     display: grid;
     grid-template-areas: 'contactText contactForm contactMap'
@@ -45,6 +45,7 @@
     grid-area: contactText;
     border: $borderSettings;
     @include ContactBox;
+    float: left;
     height: 50vh;
     background-color: transparent;
     color: white;
