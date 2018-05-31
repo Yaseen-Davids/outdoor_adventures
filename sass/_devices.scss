@@ -35,7 +35,7 @@
       'camp_content camp_content camp_content'
       ;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 10px;
+      grid-gap: 1px;
       margin-left: 5px;
       margin-right: 5px;
       }
@@ -102,91 +102,91 @@
 
     .hiking_category{
       margin-top: 50px;
-      font-size: 0.4em;
+      font-size: 0.6em;
     }
     #cat_text1{
-      font-size: 0.2em;
+      font-size: 0.5em;
       height: 20px;
       margin-top: 10px;
     }
     #hiking_img1{
-      height: 80px;
+      height: 120px;
     }
     #hiking_img2{
-      height: 90px;
+      height: 130px;
     }
     #hiking_img3{
-      height: 80px;
+      height: 120px;
     }
     .info_box1{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.2em;
-      height: 80px;
+      font-size: 0.5em;
+      height: 130px;
     }
 
     .fishing_category{
       margin-top: 50px;
-      font-size: 0.4em;
+      font-size: 0.6em;
     }
     #fishing_img1{
-      height: 80px;
+      height: 120px;
     }
     #fishing_img2{
-      height: 90px;
+      height: 130px;
     }
     #fishing_img3{
-      height: 80px;
+      height: 120px;
     }
     .info_box2{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.2em;
-      height: 80px;
+      font-size: 0.5em;
+      height: 100px;
     }
     #backtoTop{
-      padding: 5px;
-      font-size: 0.5em;
+      padding: 6px;
+      font-size: 0.8em;
     }
 
     .rock_category{
       margin-top: 50px;
-      font-size: 0.4em;
+      font-size: 0.6em;
     }
     #rock_img1{
-      height: 80px;
+      height: 120px;
     }
     #rock_img2{
-      height: 90px;
+      height: 130px;
     }
     #rock_img3{
-      height: 80px;
+      height: 120px;
     }
     .info_box3{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.2em;
-      height: 80px;
+      font-size: 0.5em;
+      height: 140px;
     }
 
     .camp_category{
       margin-top: 50px;
-      font-size: 0.4em;
+      font-size: 0.6em;
     }
     #camp_img1{
-      height: 80px;
+      height: 120px;
     }
     #camp_img2{
-      height: 90px;
+      height: 130px;
     }
     #camp_img3{
-      height: 80px;
+      height: 120px;
     }
     .info_box4{
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 0.2em;
-      height: 80px;
+      font-size: 0.5em;
+      height: 140px;
     }
 
     .quote_section{
@@ -242,7 +242,7 @@
       'footer footer'
       ;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
+      grid-gap: 10px;
       margin-left: 5px;
       margin-right: 5px;
     }
@@ -255,117 +255,121 @@
     }
     .hike_cat{
       font-size: 0.6em;
+      margin-top: 30px;
     }
     .fish_cat{
       font-size: 0.6em;
+      margin-top: 30px;
     }
     .rock_cat{
       font-size: 0.6em;
+      margin-top: 30px;
     }
     .camp_cat{
       font-size: 0.6em;
+      margin-top: 30px;
     }
     .hike_img1{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .hike_img2{
-      height: 90px;
+      height: 150px;
       @include logoImgSettings;
     }
     .hike_img3{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .hike_img4{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .hike_img5{
-      height: 110px;
-      margin-top: -10px;
+      height: 150px;
+      margin-top: 0px;
       @include logoImgSettings;
     }
     .hike_img6{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
 
     .fish_img1{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .fish_img2{
-      height: 90px;
+      height: 150px;
       @include logoImgSettings;
     }
     .fish_img3{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .fish_img4{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .fish_img5{
-      height: 110px;
-      margin-top: -10px;
+      height: 150px;
+      margin-top: 0px;
       @include logoImgSettings;
     }
     .fish_img6{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
 
     .rock_img1{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .rock_img2{
-      height: 90px;
+      height: 150px;
       @include logoImgSettings;
     }
     .rock_img3{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .rock_img4{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .rock_img5{
-      height: 110px;
-      margin-top: -10px;
+      height: 150px;
+      margin-top: 0px;
       @include logoImgSettings;
     }
     .rock_img6{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
 
     .camp_img1{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .camp_img2{
-      height: 90px;
+      height: 140px;
       @include logoImgSettings;
     }
     .camp_img3{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .camp_img4{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
     .camp_img5{
-      height: 110px;
-      margin-top: -10px;
+      height: 150px;
+      margin-top: 0px;
       @include logoImgSettings;
     }
     .camp_img6{
-      height: 100px;
+      height: 150px;
       @include logoImgSettings;
     }
 
