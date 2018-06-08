@@ -61,6 +61,7 @@
         font-size: 1.25em;
     }
 }
+// This is the category header
 @mixin categoryHeader{
     padding: 5px;
     background-color: $categoryColor;
@@ -70,11 +71,13 @@
     margin-top: 70px;
 }
 
+// This is the contact box
 @mixin ContactBox{
     background-color: white;
     opacity: 0.96;
 }
 
+// This is the buttons settings
 @mixin ButtonSettings{
     background-color: rgb(73, 73, 73);
     color: white;
@@ -89,6 +92,7 @@
     }
 }
 
+// This is the gallery category headers
 @mixin galCatHead{
     color: white;
     margin-top: 70px;
@@ -97,8 +101,9 @@
     letter-spacing: 3px;
 }
 
+// This is the input settings
 @mixin inputSettings{
-    margin-top: 10px;
+    margin-top: 30px;
     height: 25px;
     width: 300px;
     border: 1px solid transparent;

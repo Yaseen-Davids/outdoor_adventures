@@ -7,7 +7,8 @@ $navbarTextColor: rgb(104, 104, 104);
 $navbarHoverColor : black;
 
 // This is the default border code
-$borderSettings: 1px solid rgba(0, 0, 0, 0);
+// $borderSettings: 1px solid rgba(0, 0, 0, 0.979);
+$borderSettings:none;
 
 // This is the category image space
 $categoryImgSpace: 100px;
@@ -18,4 +19,5 @@ $categoryCenter: 70px;
 // This is the category header color
 $categoryColor: rgb(0, 138, 202);
 
+// This is the gallery header color
 $galleryHeaderColor :rgb(0, 217, 255);

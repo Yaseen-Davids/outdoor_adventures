@@ -6,6 +6,7 @@
 
 // ############################################### CSS STYLING #####################################################
 
+// This is the universal selector
 *{
     box-sizing: border-box;
     a{
@@ -104,10 +105,12 @@ nav{
         }
     }
 
+    // This is the dropdown menu
     .dropdown_item{
         font-size: 0.8em;
     }
 
+    // This is the dropdown list
     #categoryMenu{
         display: none;
         height: 250px;
@@ -151,6 +154,7 @@ nav{
     grid-area: side_bar;
     font-family: 'Raleway', sans-serif;
 
+    // This is the side bar info
     .side_bar_info{
         height: 300px;
         position: sticky;
@@ -280,6 +284,7 @@ nav{
     transition: all 0.7s;
 }
 
+// This is the back to top button
 #backtoTop {
     position: fixed;
     right: 30px;
@@ -306,6 +311,7 @@ nav{
     @include categoryHeader;
 }
 
+// This is the hiking category content
 .hiking_cat_content{
     display: grid;
     grid-area: hiking_content;
@@ -329,7 +335,6 @@ nav{
     background: url('../images/lionshead.jpg');
     @include backgroundImgSettings();
 }
-
 #hiking_img2{
     grid-area: hiking_img2;
     @include category_img;
@@ -357,33 +362,39 @@ nav{
         color: rgb(10, 123, 252);
     }
 
+    // This is the lions head box
     #lionshead{
         margin-top: 10px;
         display: none;
         @include paraHeader;
     }
+    // This is the skeleton box
     #skeleton{
         margin-top: 10px;
         display: none;
         @include paraHeader;
     }
+    // This is the motte box
     #motte{
         margin-top: 10px;
         display: none;
         @include paraHeader;
     }
 }
+// This is the infobox
 #infobox{
     display: none;
 }
 
 // ################################### FISHING CATEGORY ###################################
 
+// This is the fishing category
 .fishing_category{
     grid-area: fishing_category;
     @include categoryHeader;
 }
 
+// This is the fishing category content
 .fishing_cat_content{
     display: grid;
     grid-area: fishing_content;
@@ -394,6 +405,7 @@ nav{
     grid-gap: 10px;
 }
 
+// This is the category text
 #cat_text1{
     grid-area: cat_text1;
     @include category_text;
@@ -420,6 +432,7 @@ nav{
     @include backgroundImgSettings();
 }
 
+// This is the info box 2
 .info_box2{
     grid-area: info_box2;
     height: 300px;
@@ -453,12 +466,13 @@ nav{
 }
 
 // ################################### ROCK CLIMBING CATEGORY ###################################
-
+// This is the rock category
 .rock_category{
     grid-area: rock_category;
     @include categoryHeader;
 }
 
+// This is the rock category content
 .rock_cat_content{
     display: grid;
     grid-area: rock_content;
@@ -470,6 +484,7 @@ nav{
     grid-gap: 10px;
 }
 
+// This is the rock category text
 #cat_text1{
     grid-area: cat_text1;
     @include category_text;
@@ -482,7 +497,6 @@ nav{
     background: url('../images/rocklands.jpg');
     @include backgroundImgSettings();
 }
-
 #rock_img2{
     grid-area: rock_img2;
     @include category_img;
@@ -497,6 +511,7 @@ nav{
     @include backgroundImgSettings();
 }
 
+// This is the info box 3
 .info_box3{
     grid-area: info_box3;
     height: 300px;
@@ -525,16 +540,19 @@ nav{
         @include paraHeader;
     }
 }
+// This is the info box 3
 #infobox3{
     display: none;
 }
 
 // ################################### CAMPING CATEGORY ###################################
+// This is the camp category
 .camp_category{
     grid-area: camp_category;
     @include categoryHeader;
 }
 
+// This is the camp category content
 .camp_cat_content{
     display: grid;
     grid-area: camp_content;
@@ -545,18 +563,19 @@ nav{
     grid-gap: 10px;
 }
 
+// This is the camp category text
 #cat_text1{
     grid-area: cat_text1;
     @include category_text;
 }
 
+// This is the camping images
 #camp_img1{
     grid-area: camp_img1;
     @include category_img;
     background: url('../images/secretfalls.jpg');
     @include backgroundImgSettings();
 }
-
 #camp_img2{
     grid-area: camp_img2;
     @include category_img;
@@ -571,6 +590,7 @@ nav{
     @include backgroundImgSettings();
 }
 
+// This is the info box 4 code
 .info_box4{
     grid-area: info_box4;
     height: 300px;
@@ -603,6 +623,7 @@ nav{
     display: none;
 }
 
+// This is the quote section on the bottom of the page
 .quote_section{
     grid-area: quote_section;
     text-align: center;
@@ -626,6 +647,7 @@ nav{
     }
 }
 
+// This is the footer
 footer{
     grid-area: footer;
     background-color: black;
@@ -633,10 +655,15 @@ footer{
     padding: 10px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
 }
 
+// This is importing the partials
+// Contact Page Styling partial
 @import 'contact';
 
+// Gallery Page Styling partial
 @import 'gallery';
 
+// Devices Page Styling partial
 @import 'devices';

@@ -159,7 +159,7 @@ nav #categoryMenu ul li {
 
 .category_section {
   grid-area: category_section;
-  border: 1px solid transparent;
+  border: none;
   line-height: 50px;
   height: 300px;
   padding: 10px;
@@ -169,7 +169,7 @@ nav #categoryMenu ul li {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
   font-size: 1.75em;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .hiking_box {
@@ -181,7 +181,7 @@ nav #categoryMenu ul li {
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 70px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .fishing_box {
@@ -193,7 +193,7 @@ nav #categoryMenu ul li {
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 100px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .climbing_box {
@@ -206,7 +206,7 @@ nav #categoryMenu ul li {
   background-repeat: no-repeat;
   margin-left: 100px;
   margin-right: 70px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .camping_box {
@@ -218,7 +218,7 @@ nav #categoryMenu ul li {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 70px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .hiking_text {
@@ -226,7 +226,7 @@ nav #categoryMenu ul li {
   width: 14%;
   float: left;
   margin-left: 70px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .hiking_text h3 {
@@ -240,7 +240,7 @@ nav #categoryMenu ul li {
   width: 14%;
   float: left;
   margin-left: 100px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .fishing_text h3 {
@@ -255,7 +255,7 @@ nav #categoryMenu ul li {
   float: left;
   margin-left: 100px;
   margin-right: 70px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .climbing_text h3 {
@@ -269,7 +269,7 @@ nav #categoryMenu ul li {
   width: 14%;
   float: left;
   margin-right: 70px;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .category_section .camping_text h3 {
@@ -280,7 +280,7 @@ nav #categoryMenu ul li {
 
 #ads_bar {
   grid-area: ads_bar;
-  border: 1px solid transparent;
+  border: none;
   position: sticky;
   top: 500px;
   background-color: #ddd;
@@ -881,6 +881,11 @@ footer {
   padding: 10px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .contact_grid-container {
@@ -896,14 +901,14 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  border: 1px solid transparent;
+  border: none;
 }
 
 .mainContactBox {
   grid-area: contactBox;
-  border: 1px solid transparent;
-  height: 80vh;
-  margin-top: 150px;
+  border: none;
+  height: 600px;
+  margin-top: 100px;
   padding: 10px;
   display: grid;
   grid-template-areas: 'contactText contactForm contactMap' 'footer footer footer';
@@ -925,11 +930,11 @@ footer {
 
 .contactText {
   grid-area: contactText;
-  border: 1px solid transparent;
+  border: none;
   background-color: white;
   opacity: 0.96;
   float: left;
-  height: 50vh;
+  height: 500px;
   background-color: transparent;
   color: white;
 }
@@ -940,10 +945,10 @@ footer {
 
 .contactForm {
   grid-area: contactForm;
-  border: 1px solid transparent;
+  border: none;
   background-color: white;
   opacity: 0.96;
-  height: 70vh;
+  height: 500px;
   background-color: transparent;
 }
 
@@ -954,7 +959,7 @@ footer {
 }
 
 .contactForm input {
-  margin-top: 10px;
+  margin-top: 30px;
   height: 25px;
   width: 300px;
   border: 1px solid transparent;
@@ -967,7 +972,7 @@ footer {
 }
 
 .contactForm select {
-  margin-top: 10px;
+  margin-top: 20px;
   height: 35px;
   width: 300px;
   border: 1px solid transparent;
@@ -984,7 +989,7 @@ footer {
 }
 
 .contactForm textarea {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 300px;
   height: 110px;
   border: 1px solid transparent;
@@ -1012,7 +1017,7 @@ footer {
 
 .contactMap {
   grid-area: contactMap;
-  border: 1px solid transparent;
+  border: none;
   background-color: white;
   opacity: 0.96;
   height: 50vh;
@@ -1060,7 +1065,7 @@ footer {
 
 .gall-content {
   grid-area: gall-content;
-  border: 1px solid transparent;
+  border: none;
   display: grid;
   grid-template-areas: 'hike_cat hike_cat hike_cat' 'hike_img1 hike_img2 hike_img3' 'hike_img4 hike_img5 hike_img6' 'fish_cat fish_cat fish_cat' 'fish_img1 fish_img2 fish_img3' 'fish_img4 fish_img5 fish_img6' 'rock_cat rock_cat rock_cat' 'rock_img1 rock_img2 rock_img3' 'rock_img4 rock_img5 rock_img6' 'camp_cat camp_cat camp_cat' 'camp_img1 camp_img2 camp_img3' 'camp_img4 camp_img5 camp_img6' 'footer footer footer';
   grid-template-columns: 1fr 1fr 1fr;
@@ -1070,7 +1075,7 @@ footer {
 }
 
 .hike_cat {
-  border: 1px solid transparent;
+  border: none;
   grid-area: hike_cat;
   color: white;
   margin-top: 70px;
@@ -1081,7 +1086,7 @@ footer {
 
 .hike_img1 {
   grid-area: hike_img1;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike1.jpg");
@@ -1092,7 +1097,7 @@ footer {
 
 .hike_img2 {
   grid-area: hike_img2;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike2.jpg");
@@ -1103,7 +1108,7 @@ footer {
 
 .hike_img3 {
   grid-area: hike_img3;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike3.jpg");
@@ -1114,7 +1119,7 @@ footer {
 
 .hike_img4 {
   grid-area: hike_img4;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike4.jpg");
@@ -1125,7 +1130,7 @@ footer {
 
 .hike_img5 {
   grid-area: hike_img5;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   margin-top: -30px;
   box-shadow: 3px 3px 10px black;
@@ -1137,7 +1142,7 @@ footer {
 
 .hike_img6 {
   grid-area: hike_img6;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/hike6.jpg");
@@ -1147,7 +1152,7 @@ footer {
 }
 
 .fish_cat {
-  border: 1px solid transparent;
+  border: none;
   grid-area: fish_cat;
   color: white;
   margin-top: 70px;
@@ -1158,7 +1163,7 @@ footer {
 
 .fish_img1 {
   grid-area: fish_img1;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish1.jpg");
@@ -1169,7 +1174,7 @@ footer {
 
 .fish_img2 {
   grid-area: fish_img2;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish2.jpg");
@@ -1180,7 +1185,7 @@ footer {
 
 .fish_img3 {
   grid-area: fish_img3;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish3.jpg");
@@ -1191,7 +1196,7 @@ footer {
 
 .fish_img4 {
   grid-area: fish_img4;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish4.jpg");
@@ -1202,7 +1207,7 @@ footer {
 
 .fish_img5 {
   grid-area: fish_img5;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   margin-top: -30px;
   box-shadow: 3px 3px 10px black;
@@ -1214,7 +1219,7 @@ footer {
 
 .fish_img6 {
   grid-area: fish_img6;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/fish6.jpg");
@@ -1224,7 +1229,7 @@ footer {
 }
 
 .rock_cat {
-  border: 1px solid transparent;
+  border: none;
   grid-area: rock_cat;
   color: white;
   margin-top: 70px;
@@ -1235,7 +1240,7 @@ footer {
 
 .rock_img1 {
   grid-area: rock_img1;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock1.jpg");
@@ -1246,7 +1251,7 @@ footer {
 
 .rock_img2 {
   grid-area: rock_img2;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock2.jpg");
@@ -1257,7 +1262,7 @@ footer {
 
 .rock_img3 {
   grid-area: rock_img3;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock3.jpg");
@@ -1268,7 +1273,7 @@ footer {
 
 .rock_img4 {
   grid-area: rock_img4;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock4.jpg");
@@ -1279,7 +1284,7 @@ footer {
 
 .rock_img5 {
   grid-area: rock_img5;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   margin-top: -30px;
   box-shadow: 3px 3px 10px black;
@@ -1291,7 +1296,7 @@ footer {
 
 .rock_img6 {
   grid-area: rock_img6;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/rock6.jpg");
@@ -1301,7 +1306,7 @@ footer {
 }
 
 .camp_cat {
-  border: 1px solid transparent;
+  border: none;
   grid-area: camp_cat;
   color: white;
   margin-top: 70px;
@@ -1312,7 +1317,7 @@ footer {
 
 .camp_img1 {
   grid-area: camp_img1;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp1.jpg");
@@ -1323,7 +1328,7 @@ footer {
 
 .camp_img2 {
   grid-area: camp_img2;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp2.jpg");
@@ -1334,7 +1339,7 @@ footer {
 
 .camp_img3 {
   grid-area: camp_img3;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp3.jpg");
@@ -1345,7 +1350,7 @@ footer {
 
 .camp_img4 {
   grid-area: camp_img4;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp4.jpg");
@@ -1356,7 +1361,7 @@ footer {
 
 .camp_img5 {
   grid-area: camp_img5;
-  border: 1px solid transparent;
+  border: none;
   height: 300px;
   margin-top: -30px;
   box-shadow: 3px 3px 10px black;
@@ -1368,7 +1373,7 @@ footer {
 
 .camp_img6 {
   grid-area: camp_img6;
-  border: 1px solid transparent;
+  border: none;
   height: 270px;
   box-shadow: 3px 3px 10px black;
   background: url("../images/camp6.jpg");
@@ -1390,7 +1395,7 @@ footer {
 /* MOBILE DEVICES */
 @media only screen and (min-device-width: 1px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
   .home-img {
-    height: 60vh;
+    height: 100vh;
   }
   .home-img .header_logo {
     margin-top: 100px;
@@ -1608,7 +1613,7 @@ footer {
   }
   .gall-content {
     grid-area: gall-content;
-    border: 1px solid transparent;
+    border: none;
     display: grid;
     grid-template-areas: 'hike_cat hike_cat' 'hike_img1 hike_img2' 'hike_img3 hike_img4' 'hike_img5 hike_img6' 'fish_cat fish_cat' 'fish_img1 fish_img2' 'fish_img3 fish_img4' 'fish_img5 fish_img6' 'rock_cat rock_cat' 'rock_img1 rock_img2' 'rock_img3 rock_img4' 'rock_img5 rock_img6' 'camp_cat camp_cat' 'camp_img1 camp_img2' 'camp_img3 camp_img4' 'camp_img5 camp_img6' 'footer footer';
     grid-template-columns: 1fr 1fr;
@@ -1786,45 +1791,10 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
   }
-  nav {
-    font-size: 1.5em;
-  }
-  .contact_grid-container {
-    display: grid;
-    grid-template-areas: 'contactText' 'contactForm' 'footer';
-    grid-template-columns: 1fr;
-  }
-  .contact_img {
-    height: 125vh;
-  }
-  .mainContactBox {
-    height: 115vh;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 50px;
-  }
-  .contactMap {
-    display: none;
-  }
-  .contactText {
-    display: none;
-  }
-  .contactForm {
-    height: 70vh;
-  }
-  .contactForm textarea {
-    margin-top: 50px;
-  }
-  .contactForm select {
-    margin-top: 50px;
-  }
-  .contactForm input {
-    margin-top: 50px;
-  }
 }
 
 /* TABLET DEVICES */
-@media only screen and (min-device-width: 500px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
   #ads_bar {
     display: none;
   }
@@ -1833,7 +1803,7 @@ footer {
     font-size: 0.7em;
   }
   .home-img {
-    height: 60vh;
+    height: 100vh;
   }
   .home-img .header_logo {
     margin-top: 100px;
@@ -2038,7 +2008,7 @@ footer {
     font-size: 1.4em;
   }
   footer {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .gallery_grid-container {
     display: grid;
@@ -2212,66 +2182,14 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
   }
-  footer {
-    font-size: 2em;
-  }
-  .mainContactBox {
-    margin-top: 40px;
-    margin-left: 0;
-    margin-right: 0;
-    grid-gap: 5px;
-    padding: 2px;
-  }
-  .contactText h2 {
-    font-size: 1.3em;
-  }
-  .contactText h3 {
-    font-size: 1.2em;
-  }
-  .contactText p {
-    font-size: 1.2em;
-  }
-  .contactText label {
-    font-size: 1.2em;
-  }
-  .contactText a {
-    font-size: 1.2em;
-  }
-  .contactForm {
-    height: 70vh;
-  }
-  .contactForm ::placeholder {
-    font-size: 1em;
-  }
-  .contactForm input {
-    height: 20px;
-    width: 150px;
-    padding: 10px;
-    margin-top: 30px;
-  }
-  .contactForm input:focus {
-    border-color: blue;
-  }
-  .contactForm select {
-    height: 20px;
-    width: 150px;
-    font-size: 0.9em;
-    margin-top: 30px;
-  }
-  .contactForm textarea {
-    height: 80px;
-    width: 150px;
-    margin-top: 30px;
-  }
-  .contactForm button {
-    padding: 4px 16px;
-    font-size: 1.2em;
-  }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
+  #ads_bar {
+    font-size: 0.9em;
+  }
   .home-img {
-    height: 80vh;
+    height: 100vh;
   }
   .home-img .header_logo {
     margin-top: 100px;
@@ -2472,12 +2390,23 @@ footer {
     font-size: 1.5em;
   }
   footer {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 
 /* LARGE DESKTOP DEVICES */
 @media only screen and (min-device-width: 1600px) and (max-device-width: 2560px) and (-webkit-min-device-pixel-ratio: 2) {
+  #ads_bar {
+    font-size: 2em;
+    top: 500px;
+    height: 90px;
+    margin: 0 auto 15px;
+    padding: 5px;
+  }
+  #backtoTop {
+    padding: 30px;
+    font-size: 2em;
+  }
   .home-img {
     height: 100vh;
   }
@@ -2697,19 +2626,19 @@ footer {
     height: 80vh;
   }
   .gallery_text_header {
-    font-size: 2em;
+    font-size: 1.3em;
   }
   .hike_cat {
-    font-size: 2em;
+    font-size: 1.3em;
   }
   .fish_cat {
-    font-size: 2em;
+    font-size: 1.3em;
   }
   .rock_cat {
-    font-size: 2em;
+    font-size: 1.3em;
   }
   .camp_cat {
-    font-size: 2em;
+    font-size: 1.3em;
   }
   .hike_img1 {
     height: 400px;
@@ -2858,6 +2787,243 @@ footer {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  footer {
+    font-size: 1.2em;
+  }
+}
+
+/* MOBILE DEVICES */
+@media only screen and (min-device-width: 1px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    font-size: 1.5em;
+  }
+  .contact_grid-container {
+    display: grid;
+    grid-template-areas: 'contactText' 'contactForm' 'footer';
+    grid-template-columns: 1fr;
+  }
+  .contact_img {
+    height: 125vh;
+  }
+  .mainContactBox {
+    height: 115vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .contactMap {
+    display: none;
+  }
+  .contactText {
+    display: none;
+  }
+  .contactForm {
+    height: 70vh;
+  }
+  .contactForm textarea {
+    margin-top: 50px;
+  }
+  .contactForm select {
+    margin-top: 50px;
+  }
+  .contactForm input {
+    margin-top: 50px;
+  }
+}
+
+/* TABLET DEVICES */
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact_img {
+    height: 100vh;
+  }
+  .mainContactBox {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    grid-gap: 5px;
+    padding: 2px;
+  }
+  .contactText h2 {
+    font-size: 1em;
+  }
+  .contactText h3 {
+    font-size: 1em;
+  }
+  .contactText p {
+    font-size: 1em;
+  }
+  .contactText label {
+    font-size: 1em;
+  }
+  .contactText a {
+    font-size: 0.8em;
+  }
+  .contactForm {
+    height: 600px;
+  }
+  .contactForm ::placeholder {
+    font-size: 1em;
+  }
+  .contactForm input {
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .contactForm input:focus {
+    border-color: blue;
+  }
+  .contactForm select {
+    height: 20px;
+    width: 200px;
+    font-size: 0.9em;
+    margin-top: 30px;
+  }
+  .contactForm textarea {
+    height: 80px;
+    width: 200px;
+    margin-top: 30px;
+  }
+  .contactForm button {
+    padding: 4px 16px;
+    font-size: 1.2em;
+  }
+  footer {
+    margin-top: 00px;
+  }
+}
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) {
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  .contact_img {
+    height: 100vh;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  .mainContactBox {
+    height: 550px;
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-gap: 20px;
+  }
+  .contactText {
+    height: 300px;
+  }
+  .contactForm {
+    height: 500px;
+  }
+  .contactForm ::placeholder {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+  }
+  .contactForm select {
+    margin-top: 20px;
+    height: 35px;
+    width: 300px;
+    font-size: 1.2em;
+  }
+  .contactForm textarea {
+    margin-top: 20px;
+    width: 300px;
+    height: 110px;
+    font-size: 1em;
+  }
+  .contactForm input {
+    margin-top: 20px;
+  }
+  .contactForm button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+  .contactMap {
+    height: 400px;
+  }
+  .contactMap #contact_map {
+    height: 350px;
+    width: 95%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+/* LARGE DESKTOP DEVICES */
+@media only screen and (min-device-width: 1600px) and (max-device-width: 2560px) and (-webkit-min-device-pixel-ratio: 2) {
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 3em;
+  }
+  .contact_img {
+    height: 100vh;
+  }
+  p {
+    font-size: 2.3em;
+  }
+  a {
+    font-size: 2.3em;
+  }
+  .mainContactBox {
+    height: 1000px;
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-gap: 20px;
+  }
+  .contactText {
+    height: 300px;
+  }
+  .contactForm {
+    height: 500px;
+  }
+  .contactForm ::placeholder {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+  }
+  .contactForm select {
+    margin-top: 20px;
+    height: 60px;
+    width: 500px;
+    font-size: 1.6em;
+  }
+  .contactForm textarea {
+    margin-top: 20px;
+    width: 500px;
+    height: 150px;
+    font-size: 2em;
+  }
+  .contactForm input {
+    margin-top: 20px;
+    width: 500px;
+    height: 110px;
+    font-size: 2em;
+  }
+  .contactForm button {
+    font-size: 3em;
+    padding: 16px 32px;
+  }
+  .contactMap {
+    height: 400px;
+  }
+  .contactMap #contact_map {
+    height: 350px;
+    width: 95%;
+  }
+  footer {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

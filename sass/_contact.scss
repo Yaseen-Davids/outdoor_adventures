@@ -1,5 +1,11 @@
 // ############################# THIS IS THE CONTACT PAGE CSS #############################
 
+// This is the universal styling
+* {
+    box-sizing: border-box;
+}
+
+// This is the contact page grid container
 .contact_grid-container{
     display: grid;
     grid-template-areas: 'contact-img contact-img contact-img'
@@ -9,6 +15,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+// This is the main contact page image
 .contact_img{
     grid-area: contact-img;
     background: url('../images/contact_home.jpg');
@@ -17,11 +24,12 @@
     border: $borderSettings;
 }
 
+// This is the main contact box
 .mainContactBox{
     grid-area: contactBox;
     border: $borderSettings;
-    height: 80vh;
-    margin-top: 150px;
+    height: 600px;
+    margin-top: 100px;
     padding: 10px;
     display: grid;
     grid-template-areas: 'contactText contactForm contactMap'
@@ -41,12 +49,13 @@
     }
 }
 
+// This is the contact box text
 .contactText{
     grid-area: contactText;
     border: $borderSettings;
     @include ContactBox;
     float: left;
-    height: 50vh;
+    height: 500px;
     background-color: transparent;
     color: white;
     a{
@@ -54,13 +63,15 @@
     }
 }
 
+// This is the contact form
 .contactForm{
     grid-area: contactForm;
     border: $borderSettings;
     @include ContactBox;
-    height: 70vh;
+    height: 500px;
     background-color: transparent;
 
+    // This is the placeholder settings
     ::placeholder{
         color: rgb(255, 255, 255);
         font-family: 'Raleway', sans-serif;
@@ -72,7 +83,7 @@
         transition: all ease-out 0.5s;
     }
     select{
-        margin-top: 10px;
+        margin-top: 20px;
         height: 35px;
         width: 300px;
         border: 1px solid transparent;
@@ -91,7 +102,7 @@
     }
 
     textarea{
-        margin-top: 10px;
+        margin-top: 20px;
         width: 300px;
         height: 110px;
         border: 1px solid transparent;
@@ -108,6 +119,7 @@
     }
 }
 
+// This is the contact map 
 .contactMap{
     grid-area: contactMap;
     border: $borderSettings;
@@ -115,6 +127,7 @@
     height: 50vh;
     background: transparent;
 
+    // This is the map image
     #contact_map{
         height: 38vh;
         background: url('../images/myMap.png');
